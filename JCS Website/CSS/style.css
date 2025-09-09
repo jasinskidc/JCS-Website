@@ -1,0 +1,34 @@
+/* simple words such as "header" declare tags. */
+/* starting a word with "." such as " " declares class attributes. */
+/* starting a word with "#" such as "#LPHeader" declares id attributes. */
+body {
+  background-image: url(../media/img/skyBG.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensures the container takes full viewport height */
+}
+
+header {
+  background: #370f41;
+}
+
+h1 {
+  position: center;
+}
+
+main {
+  flex-grow: 1;
+}
+
+footer {
+  background: #370f41;
+}
+
+#footerDiamond {
+  width: 50px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
