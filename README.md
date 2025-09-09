@@ -1,6 +1,6 @@
 Just using this as a personal tracker for the work i put into the site.
 
-jewelschristianschool.com
+[jewelschristianschool.com](https://jewelschristianschool.com/)
 
 planned to finish landing page before 9/15.
 I want 3 pages done by then.
