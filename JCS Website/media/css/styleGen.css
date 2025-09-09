@@ -1,0 +1,114 @@
+/* simple words such as "header" declare tags. 
+starting a word with "." such as " " declares class attributes.
+starting a word with "#" such as "#LPHeader" declares id attributes. */
+
+/* TODO:List of all class and id elements:
+        IDs:  -headGreet
+              -navHome
+              -navEvents
+              -navDash
+              -navSignIn
+              -navAbout
+              -navPricing
+              -navPortal
+              -navDownloads
+              -footerDiamond
+              -headerDiamond
+        CLASS:-
+              -
+ */
+header {
+  background: #370f41;
+}
+
+h1 {
+  position: center;
+}
+
+/* NAV BAR BEGIN */
+nav {
+  background-color: #370f41;
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+/* FIXME: Border is annoying.
+   FIXME:not good for thinner screens, words disappear */
+nav button {
+  background-color: #370f41;
+  float: left;
+  display: block;
+  text-align: center;
+  padding: 0;
+  text-decoration: none;
+  border-radius: 10px;
+  width: 225px;
+  height: 50px;
+  outline: none;
+}
+
+#navHome:hover {
+  background-color: rgb(90, 178, 205);
+  color: black;
+}
+
+#navEvents:hover {
+  background-color: red;
+  color: white;
+}
+
+#navDash:hover {
+  background-color: orange;
+  color: white;
+}
+
+#navSignIn:hover {
+  background-color: rgb(255, 234, 0);
+  color: black;
+}
+
+#navAbout:hover {
+  background-color: green;
+  color: white;
+}
+
+#navPricing:hover {
+  background-color: blue;
+  color: white;
+}
+
+#navPortal:hover {
+  background-color: indigo;
+  color: white;
+}
+
+#navDownloads:hover {
+  background-color: violet;
+  color: white;
+}
+
+/* NAV BAR END */
+
+body {
+  background-image: url(../img/skyBG.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensures the container takes full viewport height */
+}
+
+main {
+  flex-grow: 1;
+}
+
+footer {
+  background: #370f41;
+  width: 100%;
+}
+/* FIXME: Diamond is not being effected. wtf. How tf. why tf */
+#footerDiamond {
+  width: 200px;
+  display: block;
+}
