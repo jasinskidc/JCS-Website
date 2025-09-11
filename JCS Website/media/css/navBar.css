@@ -18,7 +18,7 @@ nav button {
   border-radius: 10px;
   width: 225px;
   height: 50px;
-  outline: none;
+  border: none;
 }
 
 #navHome:hover {
