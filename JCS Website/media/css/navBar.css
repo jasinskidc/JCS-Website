@@ -5,9 +5,10 @@ nav {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  /* position: sticky;
+  top: 0; Didnt do anything dont know why.*/
 }
-/* FIXME: Border is annoying.
-   FIXME:not good for thinner screens, words disappear */
+/* FIXME:not good for thinner screens, words disappear */
 nav button {
   background-color: #370f41;
   float: left;
