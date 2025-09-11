@@ -1,0 +1,88 @@
+/* NAV BAR BEGIN */
+nav {
+  background-color: #370f41;
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+}
+/* FIXME: On thinner screens, nav button text may disappear due to insufficient width or font size. Consider adjusting font-size, padding, or button layout for better responsiveness. Track this issue in GitHub for future improvement. */
+nav button {
+  background-color: #370f41;
+  padding: 10px 15px;
+  text-decoration: none;
+  border-radius: 10px;
+  width: auto;
+  height: 50px;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  flex-grow: 1;
+}
+
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  nav button {
+    flex-grow: 1;
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 10px;
+    font-size: 1rem;
+  }
+  nav button:last-child {
+    margin-bottom: 0;
+  }
+}
+nav button:last-child {
+  margin-right: 0;
+}
+
+#navHome {
+  max-width: none;
+  height: 50px;
+  object-fit: contain;
+}
+
+#navEvents:hover {
+  background-color: red;
+  color: white;
+}
+
+#navAbout:hover {
+  background-color: orange;
+  color: white;
+}
+
+#navContact:hover {
+  background-color: rgb(255, 234, 0);
+  color: black;
+}
+
+#navPrice:hover {
+  background-color: green;
+  color: white;
+}
+
+#navGallery:hover {
+  background-color: blue;
+  color: white;
+}
+
+#navDownload:hover {
+  background-color: indigo;
+  color: white;
+}
+
+#navSignUp:hover {
+  background-color: violet;
+  color: white;
+}
+
+/* NAV BAR END */
