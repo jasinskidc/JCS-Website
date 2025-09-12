@@ -1,5 +1,4 @@
 let userState = "neverSignedUp"; // Change this for testing
-+ 
 const navUserButton = document.getElementById("navUserButton");
 if (userState === "neverSignedUp") {
   navUserButton.innerHTML = `
