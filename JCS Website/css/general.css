@@ -1,3 +1,17 @@
+header,
+footer {
+  width: 100%;
+  background-image: url("../media/img/bg/Royal-Purple.jpg");
+  background-size: cover;
+  /* background-color: #370f41;
+  background-blend-mode: screen; */
+  background-repeat: no-repeat;
+}
+
+h1 {
+  position: center;
+}
+
 /* body {
   background-repeat: no-repeat;
   background-position: center center;
@@ -31,3 +45,9 @@
   object-fit: cover; 
   z-index: -1;
 } */
+
+/* FIXME: Diamond is not being effected. wtf. How tf. why tf */
+#footerDiamond {
+  width: 200px;
+  display: block;
+}

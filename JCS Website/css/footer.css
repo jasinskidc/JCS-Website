@@ -1,9 +1,0 @@
-footer {
-  background: #370f41;
-  width: 100%;
-}
-/* FIXME: Diamond is not being effected. wtf. How tf. why tf */
-#footerDiamond {
-  width: 200px;
-  display: block;
-}

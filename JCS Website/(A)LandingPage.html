@@ -26,25 +26,29 @@
     />
     <meta name="robots" content="index, follow" />
     <meta name="theme-color" content="#317EFB" />
-    <link rel="stylesheet" type="text/css" href="css/header.css" />
+    <meta name="language" content="English" />
     <link rel="stylesheet" type="text/css" href="css/navBar.css" />
-    <link rel="stylesheet" type="text/css" href="css/landingPage.css" />
-    <link rel="stylesheet" type="text/css" href="css/footer.css" />
     <link rel="stylesheet" type="text/css" href="css/general.css" />
   </head>
 
   <body>
     <header>
-      <h2>Welcome to</h2>
-      <h1>JEWELS CHRISTIAN SCHOOL</h1>
+      <div id="headerText">
+        <img id="welcomeTitle" src="media/img/title/welcomeTitle.png" alt="Welcome to" />
+        <img id="jewelsTitle" src="media/img/title/jewelsTitle.png" alt="Jewels" />
+        <img id="christianTitle" src="media/img/title/christTitle.png" alt="Christian" />
+        <img id="schoolTitle" src="media/img/title/schoolTitle.png" alt="School" />
+        <!-- <h3>~Empowering families to take control of their education~</h3> TODO: Ask sara if she wants a title comment-->
+      </div>
       <img id="headerDiamond" src="media/img/logo/JCS_Official_LOGO_COLOR.png" alt="JCS Logo" />
-      <!--
+    </header>
+<nav id="navBar">      
+  <!--
         Navigation Button Logic:
         1. If the user has never signed up, show "Sign Up" and link to the sign up page.
         2. If the user has signed up, show "Log In" and link to the log in page.
         3. If the user is logged in, show "Dashboard" and link to the user dashboard.
       -->
-      <nav id="navBar">
         <!-- General Site Navigation Buttons -->
 
         <!-- TODO:I want to make it so that the nav tabs stay on screen while you are scrolling -->
@@ -52,45 +56,29 @@
           <img id="navHome" src="media/img/logo/JCS_Official_LOGO_COLOR.png" />
         </a>
         <div id="navButtons">
-          <a href="(B)Events.html">
-            <button id="navEvents">
-              <strong><span>JCS Events</span></strong>
-            </button>
+          <a href="(B)Events.html" class="nav-btn" id="navEvents">
+            <strong><span>JCS Events</span></strong>
           </a>
-          <a href="(C)About.html">
-            <button id="navAbout">
-              <strong><span>About</span></strong>
-            </button>
+          <a href="(C)About.html" class="nav-btn" id="navAbout">
+            <strong><span>About</span></strong>
           </a>
-          <a href="(D)Contact.html">
-            <button id="navContact">
-              <strong><span>Contact Us</span></strong>
-            </button>
+          <a href="(D)Contact.html" class="nav-btn" id="navContact">
+            <strong><span>Contact Us</span></strong>
           </a>
-          <a href="(E)Pricing.html">
-            <button id="navPrice">
-              <strong><span>Price Plans</span></strong>
-            </button>
+          <a href="(E)Pricing.html" class="nav-btn" id="navPrice">
+            <strong><span>Price Plans</span></strong>
           </a>
-          <a href="(F)Gallery.html">
-            <button id="navGallery">
-              <strong><span>Gallery</span></strong>
-            </button>
+          <a href="(F)Gallery.html" class="nav-btn" id="navGallery">
+            <strong><span>Gallery</span></strong>
           </a>
-          <a href="(G)Downloads.html">
-            <button id="navDownload">
-              <strong><span>Downloads</span></strong>
-            </button>
+          <a href="(G)Downloads.html" class="nav-btn" id="navDownload">
+            <strong><span>Downloads</span></strong>
           </a>
-          <a href="(H)SignUp.html">
-            <button id="navSignUp">
-              <strong><span>Sign Up</span></strong>
-            </button>
+          <a href="(H)SignUp.html" class="nav-btn" id="navSignUp">
+            <strong><span>Sign Up</span></strong>
           </a>
         </div>
       </nav>
-    </header>
-
     <main>
       <!-- Background Video Found on every page -->
       <video id="AnimatedBG" autoplay loop muted class="video-background">

@@ -9,7 +9,7 @@ nav {
   top: 0;
 }
 /* FIXME: On thinner screens, nav button text may disappear due to insufficient width or font size. Consider adjusting font-size, padding, or button layout for better responsiveness. Track this issue in GitHub for future improvement. */
-nav button {
+.nav-btn {
   background-color: #370f41;
   padding: 10px 15px;
   text-decoration: none;
@@ -21,7 +21,7 @@ nav button {
   justify-content: center;
   align-items: center;
   margin-right: 10px;
-  flex-grow: 1;
+  min-width: 100px;
 }
 
 @media (max-width: 600px) {
@@ -29,7 +29,7 @@ nav button {
     flex-direction: column;
     align-items: stretch;
   }
-  nav button {
+  nav .nav-btn {
     flex-grow: 1;
     width: 100%;
     margin-right: 0;
