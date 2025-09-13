@@ -27,58 +27,46 @@
     <meta name="robots" content="index, follow" />
     <meta name="theme-color" content="#317EFB" />
     <meta name="language" content="English" />
-    <link rel="stylesheet" type="text/css" href="css/navBar.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="css/navBar.css" /> -->
     <link rel="stylesheet" type="text/css" href="css/general.css" />
   </head>
 
   <body>
     <header>
-      <div id="headerText">
+      <img id="headerDiamond" src="media/img/logo/JCS_Vectorized_Official_LOGO.png" alt="JCS Logo" />
+      <div id="titleContainer">
+        <section id="welcomeSection">
         <img id="welcomeTitle" src="media/img/title/welcomeTitle.png" alt="Welcome to" />
-        <img id="jewelsTitle" src="media/img/title/jewelsTitle.png" alt="Jewels" />
-        <img id="christianTitle" src="media/img/title/christTitle.png" alt="Christian" />
-        <img id="schoolTitle" src="media/img/title/schoolTitle.png" alt="School" />
-        <!-- <h3>~Empowering families to take control of their education~</h3> TODO: Ask sara if she wants a title comment-->
+        </section>
+        <section id="JCSSection">
+        <img class="titleText" id="jewelsTitle" src="media/img/title/jewelsTitle.png" alt="Jewels" />
+        <img class="titleText" id="christianTitle" src="media/img/title/christTitle.png" alt="Christian" />
+        <img class="titleText" id="schoolTitle" src="media/img/title/schoolTitle.png" alt="School" />
+      </section>
+      <!-- <h3>~Empowering families to take control of their education~</h3> TODO: Ask sara if she wants a title comment-->
       </div>
-      <img id="headerDiamond" src="media/img/logo/JCS_Official_LOGO_COLOR.png" alt="JCS Logo" />
     </header>
-<nav id="navBar">      
-  <!--
-        Navigation Button Logic:
-        1. If the user has never signed up, show "Sign Up" and link to the sign up page.
-        2. If the user has signed up, show "Log In" and link to the log in page.
-        3. If the user is logged in, show "Dashboard" and link to the user dashboard.
-      -->
-        <!-- General Site Navigation Buttons -->
+    <nav id="navBar">      
+    <!--
+          Navigation Button Logic:
+          1. If the user has never signed up, show "Sign Up" and link to the sign up page.
+          2. If the user has signed up, show "Log In" and link to the log in page.
+          3. If the user is logged in, show "Dashboard" and link to the user dashboard.
+        -->
+          <!-- General Site Navigation Buttons -->
 
-        <!-- TODO:I want to make it so that the nav tabs stay on screen while you are scrolling -->
-        <a href="(A)LandingPage.html" aria-current="page">
-          <img id="navHome" src="media/img/logo/JCS_Official_LOGO_COLOR.png" />
-        </a>
-        <div id="navButtons">
-          <a href="(B)Events.html" class="nav-btn" id="navEvents">
-            <strong><span>JCS Events</span></strong>
-          </a>
-          <a href="(C)About.html" class="nav-btn" id="navAbout">
-            <strong><span>About</span></strong>
-          </a>
-          <a href="(D)Contact.html" class="nav-btn" id="navContact">
-            <strong><span>Contact Us</span></strong>
-          </a>
-          <a href="(E)Pricing.html" class="nav-btn" id="navPrice">
-            <strong><span>Price Plans</span></strong>
-          </a>
-          <a href="(F)Gallery.html" class="nav-btn" id="navGallery">
-            <strong><span>Gallery</span></strong>
-          </a>
-          <a href="(G)Downloads.html" class="nav-btn" id="navDownload">
-            <strong><span>Downloads</span></strong>
-          </a>
-          <a href="(H)SignUp.html" class="nav-btn" id="navSignUp">
-            <strong><span>Sign Up</span></strong>
-          </a>
-        </div>
-      </nav>
+          <!-- TODO:I want to make it so that the nav tabs stay on screen while you are scrolling -->
+          <div>
+            <a href="(A)LandingPage.html" aria-current="page"><img  src="media/img/logo/JCS_Official_LOGO_COLOR.png" id="navHome" /></a>
+            <a href="(B)Events.html"><img src="media/img/btns/EventsredGemBtn.png"  id="redGemBtn" class="navButton" /></a>
+            <a href="(C)About.html"><img src="media/img/btns/AboutoranGemBtn.png" id="orangeGemBtn" class="navButton" /></a>
+            <a href="(D)Contact.html"><img src="media/img/btns/ContactyeloGemBtn.png" id="yellowGemBtn" class="navButton" /></a>
+            <a href="(E)Pricing.html"><img src="media/img/btns/PricegrenGemBtn.png" id="greenGemBtn" class="navButton" /></a>
+            <a href="(F)Gallery.html"><img src="media/img/btns/GalleryblueGemBtn.png" id="blueGemBtn" class="navButton" /></a>
+            <a href="(G)Downloads.html"><img src="media/img/btns/DownloadsindiGemBtn.png" id="indigoGemBtn" class="navButton" /></a>
+            <a href="(H)SignUp.html"><img src="media/img/btns/SignUpviolGemBtn.png" id="violetGemBtn" class="navButton" /></a>
+          </div>
+    </nav>  
     <main>
       <!-- Background Video Found on every page -->
       <video id="AnimatedBG" autoplay loop muted class="video-background">

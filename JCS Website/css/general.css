@@ -1,53 +1,142 @@
+/*  Plain text=Tags: and their children. "." = element class "#" = element id */
+
+/* Body */
+body {
+  margin: 0;
+  background-image: url("../media/img/bg/saturatedSky.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+/* Body End */
+
+/* Header Content */
 header,
 footer {
-  width: 100%;
+  background-color: #4b006e;
   background-image: url("../media/img/bg/Royal-Purple.jpg");
-  background-size: cover;
-  /* background-color: #370f41;
-  background-blend-mode: screen; */
+  background-size: 400% 400%;
+  background-position: center;
   background-repeat: no-repeat;
-}
-
-h1 {
-  position: center;
-}
-
-/* body {
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-} */
-
-/* main {
-  flex-grow: 1;
-  position: relative;
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
-} */
-
-/* #AnimatedBG {
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  overflow: hidden;
-} */
-
-/* video {
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  object-fit: cover; 
-  z-index: -1;
-} */
-
-/* FIXME: Diamond is not being effected. wtf. How tf. why tf */
-#footerDiamond {
-  width: 200px;
-  display: block;
+  align-items: center;
 }
+
+#headerDiamond {
+  height: 150px;
+  width: auto;
+  margin: 10px;
+  align-self: center;
+}
+
+#titleContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  margin-left: 20px;
+  max-width: 100%;
+}
+
+#JCSSection {
+  display: flex;
+  flex-direction: row;
+  align-items: left;
+  justify-content: space-between;
+  margin-left: 20px;
+}
+
+#welcomeSection {
+  display: flex;
+  flex-direction: row;
+  align-items: left;
+  justify-content: center;
+  margin-left: 20px;
+}
+
+#welcomeTitle {
+  height: 40px;
+  width: auto;
+  margin: 10px;
+  align-self: center;
+}
+
+.titleText {
+  display: flex;
+  align-items: left;
+  justify-content: center;
+  margin-left: 20px;
+}
+
+#jewelsTitle {
+  height: 80px;
+  width: auto;
+  margin: 10px;
+  align-self: center;
+}
+
+#christianTitle {
+  height: 80px;
+  width: auto;
+  margin: 10px;
+  align-self: center;
+}
+
+#schoolTitle {
+  height: 80px;
+  width: auto;
+  margin: 10px;
+  align-self: center;
+}
+
+/* Header Content End */
+
+/* Navigation Bar */
+nav {
+  background-color: lightblue;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+}
+
+nav div {
+  align-items: left;
+  justify-content: space-between;
+  display: flex;
+  width: 96%;
+  align-items: center;
+  justify-content: space-between;
+  margin: 5px;
+}
+
+#navHome {
+  height: 80px;
+  width: auto;
+}
+
+.navButton {
+  height: 60px;
+  width: 130px;
+  filter: drop-shadow(2px 5px 2px rgba(0, 0, 0, 0.5));
+}
+
+/* #navEvents {
+  background-image: url("../media/img/btns/redGemBtn.png");
+  background-size: cover;
+  background-position: center;
+} */
+
+/* Navigation Bar End */
+
+/* Main Content */
+
+/* Main Content End */
+
+/* Footer Content */
+footer {
+  background-image: url("../media/img/bg/Royal-Purple.jpg");
+}
+
+/* Footer Content End */
