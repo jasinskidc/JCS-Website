@@ -1,125 +1,147 @@
 /*  Plain text=Tags: and their children. "." = element class "#" = element id */
-
-/* Body */
-body {
+* {
   margin: 0;
-  background-image: url("../media/img/bg/saturatedSky.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  padding: 0;
 }
-/* Body End */
 
-/* Header Content */
-header,
-footer {
-  background-color: #4b006e;
-  background-image: url("../media/img/bg/Royal-Purple.jpg");
-  background-size: 400% 400%;
+/* Body Start */
+
+body {
+  min-height: 100vh;
+  background-image: url("../media/img/saturatedSkyLight.webp");
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
+  min-height: 100dvh;
+}
+
+.sticky {
+  position: sticky;
+  z-index: 100;
+}
+
+/* Header Content */
+header {
+  background-color: #4b006e;
+  background-image: url("../media/img/Royal-Purple.webp");
+  background-size: 200%;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 
 #headerDiamond {
-  height: 150px;
+  height: 20dvh;
   width: auto;
-  margin: 10px;
-  align-self: center;
 }
 
-#titleContainer {
-  display: flex;
-  flex-direction: column;
-  align-items: left;
-  margin-left: 20px;
-  max-width: 100%;
-}
-
-#JCSSection {
-  display: flex;
-  flex-direction: row;
-  align-items: left;
-  justify-content: space-between;
-  margin-left: 20px;
-}
-
-#welcomeSection {
-  display: flex;
-  flex-direction: row;
-  align-items: left;
-  justify-content: center;
-  margin-left: 20px;
+.welcomeDiv {
+  max-width: auto;
 }
 
 #welcomeTitle {
-  height: 40px;
+  height: 5dvh;
   width: auto;
-  margin: 10px;
   align-self: center;
 }
 
-.titleText {
-  display: flex;
-  align-items: left;
-  justify-content: center;
-  margin-left: 20px;
+.jcsDiv {
+  height: auto;
 }
 
 #jewelsTitle {
-  height: 80px;
+  height: 7dvh;
   width: auto;
-  margin: 10px;
-  align-self: center;
 }
 
 #christianTitle {
-  height: 80px;
+  height: 7dvh;
   width: auto;
-  margin: 10px;
-  align-self: center;
 }
 
 #schoolTitle {
-  height: 80px;
+  height: 7dvh;
   width: auto;
-  margin: 10px;
-  align-self: center;
 }
 
 /* Header Content End */
 
 /* Navigation Bar */
 nav {
-  background-color: lightblue;
-  position: sticky;
-  top: 0;
-  z-index: 100;
+  background-size: auto 100%;
+  width: 100dvw;
+  height: 20dvh;
   display: flex;
+  flex-direction: row;
+  justify-content: center;
+  overflow: auto;
+  background-color: purple;
+  top: 0;
 }
 
 nav div {
-  align-items: left;
-  justify-content: space-between;
   display: flex;
-  width: 96%;
+  flex-direction: row;
+  justify-content: center;
   align-items: center;
-  justify-content: space-between;
-  margin: 5px;
 }
 
-#navHome {
-  height: 80px;
+.navBtns {
+  display: inline-block;
+  transition: transform 0.2s ease-in-out;
+}
+
+.navBtns:hover {
+  transform: scale(1.2);
+}
+
+.navGem {
+  min-height: 5dvh;
+  max-height: 14dvh;
+  width: auto;
+  display: flex;
+
+  /* margin: 2dvh; */
+}
+
+#navHome img {
+  height: 12dvh;
   width: auto;
 }
 
-.navButton {
-  height: 60px;
-  width: 130px;
-  filter: drop-shadow(2px 5px 2px rgba(0, 0, 0, 0.5));
+#navEvents img {
+  height: 12dvh;
+  width: auto;
+}
+
+#navAbout img {
+  height: 12dvh;
+  width: auto;
+}
+#navContact img {
+  height: 12dvh;
+  width: auto;
+}
+#navPrice img {
+  height: 12dvh;
+  width: auto;
+}
+#navGallery img {
+  height: 12dvh;
+  width: auto;
+}
+#navDownloads img {
+  height: 12dvh;
+  width: auto;
+}
+#navSignUp img {
+  height: 12dvh;
+  width: auto;
 }
 
 /* #navEvents {
@@ -131,12 +153,20 @@ nav div {
 /* Navigation Bar End */
 
 /* Main Content */
-
+main {
+  flex-grow: 1;
+}
 /* Main Content End */
 
 /* Footer Content */
 footer {
-  background-image: url("../media/img/bg/Royal-Purple.jpg");
+  background-color: #4b006e;
+  background-image: url("../media/img/Royal-Purple.webp");
+  background-size: 200%;
+  background-position: center;
+  background-repeat: no-repeat;
+  bottom: 0;
 }
-
 /* Footer Content End */
+
+/* Body End */

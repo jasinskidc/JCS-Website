@@ -33,124 +33,77 @@
 
   <body>
     <header>
-      <img id="headerDiamond" src="media/img/logo/JCS_Vectorized_Official_LOGO.png" alt="JCS Logo" />
-      <div id="titleContainer">
-        <section id="welcomeSection">
-        <img id="welcomeTitle" src="media/img/title/welcomeTitle.png" alt="Welcome to" />
-        </section>
-        <section id="JCSSection">
-        <img class="titleText" id="jewelsTitle" src="media/img/title/jewelsTitle.png" alt="Jewels" />
-        <img class="titleText" id="christianTitle" src="media/img/title/christTitle.png" alt="Christian" />
-        <img class="titleText" id="schoolTitle" src="media/img/title/schoolTitle.png" alt="School" />
-      </section>
-      <!-- <h3>~Empowering families to take control of their education~</h3> TODO: Ask sara if she wants a title comment-->
-      </div>
+      <img id="headerDiamond" src="media/img/JCS_Vectorized_Official_LOGO.png" alt="JCS Logo" />
+        <div class="welcomeDiv">
+          <img id="welcomeTitle" src="media/img/titleWelcome.png" alt="Welcome to" />
+        </div>
+        <div class="jcsDiv">
+          <img class="titleText" id="jewelsTitle" src="media/img/titleJewels.png" alt="Jewels" />
+          <img class="titleText" id="christianTitle" src="media/img/titleChrist.png" alt="Christian" />
+          <img class="titleText" id="schoolTitle" src="media/img/titleSchool.png" alt="School" />
+        </div>
     </header>
-    <nav id="navBar">      
-    <!--
-          Navigation Button Logic:
-          1. If the user has never signed up, show "Sign Up" and link to the sign up page.
-          2. If the user has signed up, show "Log In" and link to the log in page.
-          3. If the user is logged in, show "Dashboard" and link to the user dashboard.
-        -->
-          <!-- General Site Navigation Buttons -->
-
-          <!-- TODO:I want to make it so that the nav tabs stay on screen while you are scrolling -->
-          <div>
-            <a href="(A)LandingPage.html" aria-current="page"><img  src="media/img/logo/JCS_Official_LOGO_COLOR.png" id="navHome" /></a>
-            <a href="(B)Events.html"><img src="media/img/btns/EventsredGemBtn.png"  id="redGemBtn" class="navButton" /></a>
-            <a href="(C)About.html"><img src="media/img/btns/AboutoranGemBtn.png" id="orangeGemBtn" class="navButton" /></a>
-            <a href="(D)Contact.html"><img src="media/img/btns/ContactyeloGemBtn.png" id="yellowGemBtn" class="navButton" /></a>
-            <a href="(E)Pricing.html"><img src="media/img/btns/PricegrenGemBtn.png" id="greenGemBtn" class="navButton" /></a>
-            <a href="(F)Gallery.html"><img src="media/img/btns/GalleryblueGemBtn.png" id="blueGemBtn" class="navButton" /></a>
-            <a href="(G)Downloads.html"><img src="media/img/btns/DownloadsindiGemBtn.png" id="indigoGemBtn" class="navButton" /></a>
-            <a href="(H)SignUp.html"><img src="media/img/btns/SignUpviolGemBtn.png" id="violetGemBtn" class="navButton" /></a>
-          </div>
-    </nav>  
+    <nav id="navBar" aria-label="Main Navigation" class="sticky">
+      <div>
+        <a href="(A)LandingPage.html" aria-current="page" id="navHome" class="navBtns"><img src="media/img/JCS_Vectorized_Official_LOGO.png" alt="Home" /></a>
+      </div>
+      <div>
+        <a href="(B)Events.html" id="navEvents" class="navBtns"><img class="navGem" src="media/img/jcsCalendarButton.webp" alt="Calendar" /></a>
+      </div>
+      <div>
+        <a href="(C)About.html" id="navAbout" class="navBtns"><img class="navGem" src="media/img/jcsContactButton.webp" alt="Contact Us" /></a>
+      </div>
+      <div>
+        <a href="(D)Contact.html" id="navContact" class="navBtns"><img class="navGem" src="media/img/jcsAboutButton.webp" alt="About Us" /></a>
+      </div>
+      <div>
+        <a href="(E)Price.html" id="navPrice" class="navBtns"><img class="navGem" src="media/img/jcsPriceButton.webp" alt="Price Plans" /></a>
+      </div>
+      <div>
+        <a href="(F)Gallery.html" id="navGallery" class="navBtns"><img class="navGem" src="media/img/jcsGalleryButton.webp" alt="Gallery" /></a>
+      </div>
+      <div>
+        <a href="(G)Downloads.html" id="navDownloads" class="navBtns"><img class="navGem" src="media/img/jcsDownloadButton.webp" alt="Downloads" /></a>
+      </div>
+      <div>
+        <a href="(H)SignUp.html" id="navSignUp" class="navBtns"><img class="navGem" src="media/img/jcsSignInButton.webp" alt="User Portal" /></a>
+      </div>
+    </nav>
+            <!--
+            Navigation Button Logic:
+            1. If the user has never signed up, show "Sign Up" and link to the sign up page.
+            2. If the user has signed up, show "Log In" and link to the log in page.
+            3. If the user is logged in, show "Dashboard" and link to the user dashboard.
+            -->
     <main>
-      <!-- Background Video Found on every page -->
-      <video id="AnimatedBG" autoplay loop muted class="video-background">
-        <source
-          src="vid/DiamAnimBG.mp4"
-          type="video/mp4"
-        />
-      </video>
-      <div id="landingPageArticles">
+      <div class="LPArticles">
         <!-- TODO:Create a div for the landing page articles 
         TODO:Get a list of what type of information should be immediately available. 
         Then use said list to get that information into the articles  -->
         <!-- Placeholder for landing page articles -->
+         <p><Strong>The deadline has passed, and i have failed.</Strong></p>
+         <p>New deadline----9/25/25------Fingers crossed.</p>
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est natus dolorem itaque dolores, amet iste beatae laboriosam et ex nulla nesciunt neque culpa, asperiores at. Explicabo similique esse consequatur aperiam?<p>
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est natus dolorem itaque dolores, amet iste beatae laboriosam et ex nulla nesciunt neque culpa, asperiores at. Explicabo similique esse consequatur aperiam?<p>
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est natus dolorem itaque dolores, amet iste beatae laboriosam et ex nulla nesciunt neque culpa, asperiores at. Explicabo similique esse consequatur aperiam?<p>
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est natus dolorem itaque dolores, amet iste beatae laboriosam et ex nulla nesciunt neque culpa, asperiores at. Explicabo similique esse consequatur aperiam?<p>
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est natus dolorem itaque dolores, amet iste beatae laboriosam et ex nulla nesciunt neque culpa, asperiores at. Explicabo similique esse consequatur aperiam?<p>
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est natus dolorem itaque dolores, amet iste beatae laboriosam et ex nulla nesciunt neque culpa, asperiores at. Explicabo similique esse consequatur aperiam?<p>
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est natus dolorem itaque dolores, amet iste beatae laboriosam et ex nulla nesciunt neque culpa, asperiores at. Explicabo similique esse consequatur aperiam?<p>
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est natus dolorem itaque dolores, amet iste beatae laboriosam et ex nulla nesciunt neque culpa, asperiores at. Explicabo similique esse consequatur aperiam?<p>
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est natus dolorem itaque dolores, amet iste beatae laboriosam et ex nulla nesciunt neque culpa, asperiores at. Explicabo similique esse consequatur aperiam?<p>
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est natus dolorem itaque dolores, amet iste beatae laboriosam et ex nulla nesciunt neque culpa, asperiores at. Explicabo similique esse consequatur aperiam?<p>
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est natus dolorem itaque dolores, amet iste beatae laboriosam et ex nulla nesciunt neque culpa, asperiores at. Explicabo similique esse consequatur aperiam?<p>
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est natus dolorem itaque dolores, amet iste beatae laboriosam et ex nulla nesciunt neque culpa, asperiores at. Explicabo similique esse consequatur aperiam?<p>
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est natus dolorem itaque dolores, amet iste beatae laboriosam et ex nulla nesciunt neque culpa, asperiores at. Explicabo similique esse consequatur aperiam?<p>
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est natus dolorem itaque dolores, amet iste beatae laboriosam et ex nulla nesciunt neque culpa, asperiores at. Explicabo similique esse consequatur aperiam?<p>
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est natus dolorem itaque dolores, amet iste beatae laboriosam et ex nulla nesciunt neque culpa, asperiores at. Explicabo similique esse consequatur aperiam?<p>
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est natus dolorem itaque dolores, amet iste beatae laboriosam et ex nulla nesciunt neque culpa, asperiores at. Explicabo similique esse consequatur aperiam?<p>
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est natus dolorem itaque dolores, amet iste beatae laboriosam et ex nulla nesciunt neque culpa, asperiores at. Explicabo similique esse consequatur aperiam?<p>
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est natus dolorem itaque dolores, amet iste beatae laboriosam et ex nulla nesciunt neque culpa, asperiores at. Explicabo similique esse consequatur aperiam?<p>
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est natus dolorem itaque dolores, amet iste beatae laboriosam et ex nulla nesciunt neque culpa, asperiores at. Explicabo similique esse consequatur aperiam?<p>
       </div>
-
-      <article>
-        <img src="media/img/JCS_GRAD20251stSemNEW.jpg" />
-        <p>
-          Dylan encountered difficulties with CSS styles for about 10 minutes
-          and had to consult another tutorial to resolve the issue.
-        </p>
-      </article>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
-        culpa quibusdam odit deserunt dolorum inventore expedita praesentium
-        pariatur? Quas impedit quos dolorem quaerat enim expedita alias quam?
-        Ipsam, maxime praesentium!
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
-        culpa quibusdam odit deserunt dolorum inventore expedita praesentium
-        pariatur? Quas impedit quos dolorem quaerat enim expedita alias quam?
-        Ipsam, maxime praesentium!
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
-        culpa quibusdam odit deserunt dolorum inventore expedita praesentium
-        pariatur? Quas impedit quos dolorem quaerat enim expedita alias quam?
-        Ipsam, maxime praesentium!
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
-        culpa quibusdam odit deserunt dolorum inventore expedita praesentium
-        pariatur? Quas impedit quos dolorem quaerat enim expedita alias quam?
-        Ipsam, maxime praesentium!
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
-        culpa quibusdam odit deserunt dolorum inventore expedita praesentium
-        pariatur? Quas impedit quos dolorem quaerat enim expedita alias quam?
-        Ipsam, maxime praesentium!
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
-        culpa quibusdam odit deserunt dolorum inventore expedita praesentium
-        pariatur? Quas impedit quos dolorem quaerat enim expedita alias quam?
-        Ipsam, maxime praesentium!
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
-        culpa quibusdam odit deserunt dolorum inventore expedita praesentium
-        pariatur? Quas impedit quos dolorem quaerat enim expedita alias quam?
-        Ipsam, maxime praesentium!
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
-        culpa quibusdam odit deserunt dolorum inventore expedita praesentium
-        pariatur? Quas impedit quos dolorem quaerat enim expedita alias quam?
-        Ipsam, maxime praesentium!
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
-        culpa quibusdam odit deserunt dolorum inventore expedita praesentium
-        pariatur? Quas impedit quos dolorem quaerat enim expedita alias quam?
-        Ipsam, maxime praesentium!
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
-        culpa quibusdam odit deserunt dolorum inventore expedita praesentium
-        pariatur? Quas impedit quos dolorem quaerat enim expedita alias quam?
-        Ipsam, maxime praesentium!
-      </p>
     </main>
-
     <footer>
       <div class="footer-container" style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; padding: 20px;">
         <div class="footer-left" style="flex: 1; min-width: 180px;">
@@ -159,7 +112,7 @@
         <div class="footer-center" style="flex: 0 0 auto; text-align: center;">
           <img
             id="footerDiamond"
-            src="media/img/logo/JCS_Official_LOGO_COLOR.png"
+            src="media/img/JCS_Vectorized_Official_LOGO.png"
             alt="JCS Logo"
             style="height: 60px;"
           />
@@ -170,10 +123,10 @@
         </div>
         <div class="footer-right" style="flex: 1; min-width: 180px; text-align: right;">
           <p>
-            Contact us at 
+            Contact us at: 
             <a href="tel:+12566068142">(256) 606-8142</a>
             or 
-            <a href="mailto:info@jcs-website.com">info@jcs-website.com</a>
+            <a href="mailto:info@jcs-website.com">cliljewels@hotmail.com</a>
           </p>
         </div>
       </div>
