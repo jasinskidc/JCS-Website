@@ -7,6 +7,7 @@
 /* Body Start */
 
 body {
+  contain: paint;
   min-height: 100vh;
   background-image: url("../media/img/saturatedSkyLight.webp");
   background-size: cover;
@@ -17,16 +18,11 @@ body {
   min-height: 100dvh;
 }
 
-.sticky {
-  position: sticky;
-  z-index: 100;
-}
-
 /* Header Content */
 header {
-  background-color: #4b006e;
-  background-image: url("../media/img/Royal-Purple.webp");
-  background-size: 200%;
+  background-color: lightblue;
+  /* background-image: url("../media/img/Royal-Purple.webp"); */
+  background-size: 100dvw;
   background-position: center;
   background-repeat: no-repeat;
   display: flex;
@@ -36,36 +32,17 @@ header {
 }
 
 #headerDiamond {
-  height: 20dvh;
+  height: 16dvh;
   width: auto;
-}
-
-.welcomeDiv {
-  max-width: auto;
 }
 
 #welcomeTitle {
-  height: 5dvh;
-  width: auto;
-  align-self: center;
-}
-
-.jcsDiv {
-  height: auto;
-}
-
-#jewelsTitle {
-  height: 7dvh;
+  height: 3dvh;
   width: auto;
 }
 
-#christianTitle {
-  height: 7dvh;
-  width: auto;
-}
-
-#schoolTitle {
-  height: 7dvh;
+#jcsTitle {
+  height: 11dvh;
   width: auto;
 }
 
@@ -73,21 +50,27 @@ header {
 
 /* Navigation Bar */
 nav {
+  overflow-x: scroll;
   background-size: auto 100%;
-  width: 100dvw;
-  height: 20dvh;
+  width: 100%;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
-  overflow: auto;
-  background-color: purple;
+  background-color: lightblue;
   top: 0;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+nav::-webkit-scrollbar {
+  display: non;
 }
 
 nav div {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  margin: 1dvh;
   align-items: center;
 }
 
@@ -100,47 +83,38 @@ nav div {
   transform: scale(1.2);
 }
 
-.navGem {
-  min-height: 5dvh;
-  max-height: 14dvh;
-  width: auto;
-  display: flex;
-
-  /* margin: 2dvh; */
-}
-
 #navHome img {
-  height: 12dvh;
-  width: auto;
+  height: 8dvh;
+  /* width: auto; */
 }
 
 #navEvents img {
-  height: 12dvh;
+  height: 7dvh;
   width: auto;
 }
 
 #navAbout img {
-  height: 12dvh;
+  height: 7dvh;
   width: auto;
 }
 #navContact img {
-  height: 12dvh;
+  height: 7dvh;
   width: auto;
 }
 #navPrice img {
-  height: 12dvh;
+  height: 7dvh;
   width: auto;
 }
 #navGallery img {
-  height: 12dvh;
+  height: 7dvh;
   width: auto;
 }
 #navDownloads img {
-  height: 12dvh;
+  height: 7dvh;
   width: auto;
 }
-#navSignUp img {
-  height: 12dvh;
+#navUserPortal img {
+  height: 7dvh;
   width: auto;
 }
 
