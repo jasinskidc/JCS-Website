@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- 
+      TODO:s for (A)LandingPage.html:
+       Make the list, following a tutorial on what meta tags are useful.
+      Create a div for the landing page articles.
+      Get a list of what type of information should be immediately available, then use said list to get that information into the articles.
+      Finish the footer and figure out how the text is properly placed on either side of the logo.
+    -->
+    <title>Jewels Christian School</title>
+    <meta
+      name="description"
+      content="JCS is a North Alabama home-school covering that seeks to give students of all ages control of their education."
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Charles Dylan Jasinski" />
+    <meta
+      name="keywords"
+      content="Jewel's Christian School, JCS, Christian School, Home School, North Alabama"
+    />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#317EFB" />
+    <meta name="language" content="English" />
+    <!-- <link rel="stylesheet" type="text/css" href="css/navBar.css" /> -->
+    <link rel="stylesheet" type="text/css" href="style-sheets/general.css" />
+    <link rel="stylesheet" type="text/css" href="style-sheets/about.css" />
+  </head>
+
+  <body>
+    <header>
+      <img
+        class="titleElement"
+        id="headerDiamond"
+        src="media/img/JCS_Vectorized_Official_LOGO.webp"
+        alt="JCS Logo"
+      />
+      <img
+        class="titleElement titleText"
+        id="pageTitle"
+        src="media/img/titleAbout.webp"
+        alt="Welcome to"
+      />
+    </header>
+    <nav id="navBar" aria-label="Main Navigation">
+      <div>
+        <!-- TODO: Change (A)LandingPage.html to jewelschristianschool.com in website manager!!-->
+        <a href="LandingPage.html" id="navHome" class="navBtns"
+          ><img
+            src="media/img/JCS_Vectorized_Official_LOGO.webp"
+            alt="||Home||"
+        /></a>
+      </div>
+      <div>
+        <a href="Calendar.html" id="navEvents" class="navBtns"
+          ><img
+            class="navGem"
+            src="media/img/jcsCalendarButton.webp"
+            alt="||Calendar||"
+        /></a>
+      </div>
+      <div>
+        <a href="Contact.html" id="navAbout" class="navBtns"
+          ><img
+            class="navGem"
+            src="media/img/jcsContactButton.webp"
+            alt="||Contact Us||"
+        /></a>
+      </div>
+      <div>
+        <a
+          href="About_Us.html"
+          id="navContact"
+          aria-current="page"
+          class="navBtns"
+          ><img
+            class="navGem"
+            src="media/img/jcsAboutButton.webp"
+            alt="||About Us||"
+        /></a>
+      </div>
+      <div>
+        <a href="Pricing.html" id="navPrice" class="navBtns">
+          <img
+            class="navGem"
+            src="media/img/jcsPriceButton.webp"
+            alt="||Price Plans||"
+          />
+        </a>
+      </div>
+      <div>
+        <a href="Gallery.html" id="navGallery" class="navBtns">
+          <img
+            class="navGem"
+            src="media/img/jcsGalleryButton.webp"
+            alt="||Gallery||"
+          />
+        </a>
+      </div>
+      <div>
+        <a href="Downloads.html" id="navDownloads" class="navBtns">
+          <img
+            class="navGem"
+            src="media/img/jcsDownloadButton.webp"
+            alt="||Downloads||"
+          />
+        </a>
+      </div>
+      <div>
+        <a href="User_Portal.html" id="navUserPortal" class="navBtns">
+          <img
+            class="navGem"
+            src="media/img/jcsSignUpButton.webp"
+            alt="||User Portal||"
+          />
+        </a>
+        <!--
+              Navigation Button Logic:
+              1. If the user has never signed up, show "Sign Up" and link to the sign up page.
+              2. If the user has signed up, show "Log In" and link to the log in page.
+              3. If the user is logged in, show "Dashboard" and link to the user dashboard.
+              -->
+      </div>
+    </nav>
+    <main>
+      <img
+        src="media/img/workingonit.webp"
+        alt="<b> Site is under construction! </b>"
+      />
+      <p>Come back another time! Thank You!</p>
+    </main>
+    <footer>
+      <div class="footer-left">
+        <p>Thanks for visiting JCS</p>
+        <p>
+          Contact us at: <a href="tel:+12566068142">(256) 606-8142</a> or
+          <a href="mailto:cliljewels@hotmail.com">cliljewels@hotmail.com</a>
+        </p>
+      </div>
+      <div class="footer-center">
+        <a href="#top"
+          ><img
+            id="footerDiamond"
+            src="media/img/JCS_Vectorized_Official_LOGO.webp"
+            alt="JCS Logo || Return to Top Button"
+        /></a>
+        <p style="margin-top: 10px">
+          Thank you for visiting Jewels Christian School! Empowering students to
+          take control of their education.<br />
+          Interested in joining?
+          <a href="UserPortal/SignUp.html">Sign up today!</a>
+        </p>
+      </div>
+      <section class="footer-right">
+        <div id="footQuickEmail">
+          <form></form>
+        </div>
+        <div id="footQuickAdminLogin">
+          <form>
+            <label for="adminPW">Amdin Log-in:</label><br />
+            <input type="text" id="adminPW" name="amdinPW" /><br />
+          </form>
+        </div>
+      </section>
+    </footer>
+  </body>
+</html>

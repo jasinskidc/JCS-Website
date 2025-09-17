@@ -11,7 +11,7 @@ body {
   min-height: 100vh;
   background-image: url("../media/img/saturatedSkyLight.webp");
   background-size: cover;
-  background-position: center;
+  background-position: center center;
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
@@ -20,21 +20,19 @@ body {
 
 /* Header Content */
 header {
-  background-color: lightblue;
   width: 99.5%;
-
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 0.5dvh;
-  margin-left: 0.5dvh;
-  margin-right: 0.5dvh;
-
-  border: 3px solid gold;
-  border-bottom: none;
+  margin: 0.5dvh 0.5dvh 0dvh 0.5dvh;
+  padding: 1dvh;
   box-sizing: border-box;
-  border-radius: 20px;
+  border-radius: 20px 20px 0 0;
+}
+
+.titleElement {
+  filter: drop-shadow(2px 2px 8px rgba(0, 0, 0, 0.6));
 }
 
 #headerDiamond {
@@ -42,25 +40,10 @@ header {
   width: auto;
 }
 
-#welcomeTitle {
-  height: 3dvh;
-  width: auto;
+.titleText {
+  max-height: 8dvh;
 }
 
-#jewelsTitle {
-  height: 8dvh;
-  width: auto;
-}
-
-#christianTitle {
-  height: 8dvh;
-  width: auto;
-}
-
-#schoolTitle {
-  height: 8vh;
-  width: auto;
-}
 /* Header Content End */
 
 /* Navigation Bar */
@@ -71,16 +54,14 @@ nav {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  background-color: lightblue;
   top: 0;
   -ms-overflow-style: none;
   scrollbar-width: none;
-  margin: 0.5dvh;
-  margin-right: 1dvh;
+  margin-bottom: 0.5dvh;
+  margin-left: 0.5dvh;
 
-  border: 3px solid gold;
   box-sizing: border-box;
-  border-radius: 20px;
+  border-radius: 0 0 20px 20px;
 }
 
 nav::-webkit-scrollbar {
@@ -90,13 +71,14 @@ nav::-webkit-scrollbar {
 nav div {
   display: flex;
   flex-direction: row;
-  margin: 1dvh;
+  margin: 4dvh 1dvh 3dvh 1dvh;
   align-items: center;
 }
 
 .navBtns {
   display: inline-block;
   transition: transform 0.2s ease-in-out;
+  filter: drop-shadow(2px 2px 8px rgba(0, 0, 0, 0.6));
 }
 
 .navBtns:hover {
@@ -138,6 +120,32 @@ nav div {
   width: auto;
 }
 
+#navHome img:hover {
+  filter: drop-shadow(0px 0px 10px rgba(255, 255, 255, 1));
+}
+
+#navEvents img:hover {
+  filter: drop-shadow(0px 0px 10px rgb(255, 0, 0, 1));
+}
+
+#navAbout img:hover {
+  filter: drop-shadow(0px 0px 10px rgb(247, 178, 4, 1));
+}
+#navContact img:hover {
+  filter: drop-shadow(0px 0px 10px rgb(255, 230, 7, 1));
+}
+#navPrice img:hover {
+  filter: drop-shadow(0px 0px 10px rgb(12, 128, 3, 1));
+}
+#navGallery img:hover {
+  filter: drop-shadow(0px 0px 10px rgb(26, 8, 188, 1));
+}
+#navDownloads img:hover {
+  filter: drop-shadow(0px 0px 10px rgb(109, 8, 143, 1));
+}
+#navUserPortal img:hover {
+  filter: drop-shadow(0px 0px 10px rgb(205, 17, 226, 1));
+}
 /* Navigation Bar End */
 
 /* Main Content */
@@ -148,52 +156,42 @@ main {
   align-items: center;
   flex-grow: 1;
   width: 99.5%;
+  box-sizing: border-box;
+
+  border-radius: 20px;
   margin: 0.5dvh;
 
-  border: 4px solid greenyellow;
-  box-sizing: border-box;
+  background-image: url("../media/img/WoodCross\ BG\ Element.webp");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: 30% auto;
+  overflow: clip;
 }
 
 main section {
   width: 30dvw;
-  background-color: rgba(0, 0, 0, 0.5);
-  margin: 0.5dvh;
-  padding: 0.5dvh;
 
-  border: 3px solid gold;
+  margin: 3dvh;
+  padding: 2dvh;
+
+  background-color: rgba(0, 0, 0, 0.2);
+  border: 0px solid transparent;
   box-sizing: border-box;
   border-radius: 20px;
+  font: italic small-caps bold 16px/1.5 "Arial", sans-serif;
+  color: white;
 }
 
-#LPbriefDescription {
-  width: 98%;
+.smallImage {
+  border: 1px solid transparent;
+  border-radius: 15px;
+  height: 14dvh;
 }
 
-#LPwhatsHappening {
-  display: flex;
-  flex-direction: row;
-  width: 98%;
-}
-
-.WHdiv {
-  background-color: gray;
-  width: 50%;
-  margin: 1dvh;
-}
-
-#LPtestimonials {
-  width: 98%;
-}
-
-.testimonials {
-  margin: 1dvh;
-  background-color: gray;
-}
 /* Main Content End */
 
 /* Footer Content */
 footer {
-  background-color: lightblue;
   width: 99.5%;
 
   display: flex;
@@ -202,7 +200,6 @@ footer {
   bottom: 0;
   margin: 0.5dvh;
 
-  border: 3px solid gold;
   box-sizing: border-box;
   border-radius: 20px;
 }
@@ -229,6 +226,7 @@ footer div {
   height: 12dvh;
   width: auto;
   transition: transform 0.2s ease-in-out;
+  filter: drop-shadow(2px 2px 8px rgba(0, 0, 0, 0.4));
 }
 
 #footerDiamond:hover {

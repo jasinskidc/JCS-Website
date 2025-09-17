@@ -1,0 +1,78 @@
+header,nav,footer{
+    background-color: #7851a9;
+}
+
+#welcomeTitle {
+  height: 3dvh;
+  width: auto;
+}
+.jcsDiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 58dvw;
+}
+
+#jewelsTitle {
+  height: 8dvh;
+  width: auto;
+}
+
+#christianTitle {
+  height: 8dvh;
+  width: auto;
+}
+
+#schoolTitle {
+  height: 8vh;
+  width: auto;
+}
+
+#LPbriefDescription {
+  width: 98%;
+}
+
+#LPbriefDescription div {
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 9px;
+  margin: 1dvh;
+  padding: 1dvh;
+}
+
+#LPwhatsHappening {
+  display: flex;
+  flex-direction: row;
+  width: 98%;
+}
+
+.WHdiv {
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 9px;
+  width: 50%;
+  margin: 1dvh;
+}
+
+#LPtestimonials {
+  width: 98%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.testimonials {
+  margin: 2dvh;
+  padding: 1dvh;
+  background-color: rgba(0, 0, 0, 0.3);
+  text-indent: 12px;
+  border-radius: 9px;
+}
+
+.personalTestimonialT1 img {
+  float: left;
+  margin: 1dvh;
+}
+
+.personalTestimonialT2 img {
+  float: right;
+  margin: 1dvh;
+}
