@@ -1,29 +1,38 @@
+/* Header Start */
 #welcomeTitle {
-  height: 3vh;
-  width: auto;
+  max-height: 3vh;
+  min-height: 1vh;
+  min-width: 10vw;
 }
 .jcsDiv {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
-  width: 58vw;
+  width: 70%;
+  flex-wrap: wrap;
 }
 
-#jewelsTitle {
-  height: 8vh;
+/* #jewelsTitle, #christianTitle, #schoolTitle{
+  min-height: 5vh;
+} */
+
+#jewelsTitle{
+  max-width:32%;
+}
+
+#christianTitle{
+  max-width:36%;
+}
+
+#schoolTitle{
+  max-width:32%;
+}
+/* #christianTitle {
+  min-height: 1vh;
   width: auto;
-}
+} */
 
-#christianTitle {
-  height: 8vh;
-  width: auto;
-}
-
-#schoolTitle {
-  height: 8vh;
-  width: auto;
-}
-
+/* Header End */
 #LPbriefDescription {
   width: 98%;
 }
