@@ -1,25 +1,21 @@
-header,nav,footer{
-    background-color: #7851a9;
-}
-
 #welcomeTitle {
-  height: 3dvh;
+  height: 3vh;
   width: auto;
 }
 .jcsDiv {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 58dvw;
+  width: 58vw;
 }
 
 #jewelsTitle {
-  height: 8dvh;
+  height: 8vh;
   width: auto;
 }
 
 #christianTitle {
-  height: 8dvh;
+  height: 8vh;
   width: auto;
 }
 
@@ -35,8 +31,8 @@ header,nav,footer{
 #LPbriefDescription div {
   background-color: rgba(0, 0, 0, 0.3);
   border-radius: 9px;
-  margin: 1dvh;
-  padding: 1dvh;
+  margin: 1vh;
+  padding: 1vh;
 }
 
 #LPwhatsHappening {
@@ -49,7 +45,7 @@ header,nav,footer{
   background-color: rgba(0, 0, 0, 0.3);
   border-radius: 9px;
   width: 50%;
-  margin: 1dvh;
+  margin: 1vh;
 }
 
 #LPtestimonials {
@@ -60,8 +56,8 @@ header,nav,footer{
 }
 
 .testimonials {
-  margin: 2dvh;
-  padding: 1dvh;
+  margin: 2vh;
+  padding: 1vh;
   background-color: rgba(0, 0, 0, 0.3);
   text-indent: 12px;
   border-radius: 9px;
@@ -69,10 +65,10 @@ header,nav,footer{
 
 .personalTestimonialT1 img {
   float: left;
-  margin: 1dvh;
+  margin: 1vh;
 }
 
 .personalTestimonialT2 img {
   float: right;
-  margin: 1dvh;
+  margin: 1vh;
 }
