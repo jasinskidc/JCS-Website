@@ -10,7 +10,7 @@
 body {
   contain: paint;
   min-height: 100vh;
-  background-image: url("../media/img/saturatedSkyLight.webp");
+  background-image: url("../media/img/background_day.webp");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -31,13 +31,45 @@ footer {
   align-items: center;
 }
 
+.UnderWork {
+  width: 10vw;
+}
+
+/* TEMP */
+main iframe {
+  width: 80%;
+  height: 80vh;
+}
+
+/* Temp */
 /* Header Content */
+
+@font-face {
+  font-family: "Harrington";
+  src: url("../media/fonts/HARRINGT.TTF") format("truetype");
+}
+
 header {
-  flex-direction: column;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
   margin: 0.5vh 0.5vh 0vh 0.5vh;
   padding: 1vh;
   box-sizing: border-box;
   border-radius: 20px 20px 0 0;
+}
+
+header div {
+  margin: 2%;
+}
+
+#titleDiamond {
+  filter: drop-shadow(2px 2px 8px rgba(0, 0, 0, 0.1));
+  transition: drop-shadow 0.5s ease-in-out;
+}
+
+#titleDiamond:hover {
+  filter: drop-shadow(2px 2px 8px rgba(255, 255, 255, 3));
 }
 
 .titleElement {
@@ -45,126 +77,30 @@ header {
 }
 
 #headerDiamond {
-  height: 16vh;
+  height: 10rem;
+  max-height: 25vh;
   width: auto;
 }
 
-.titleText {
-  max-height: 8vh;
-  min-height: 5vh;
-  max-width: 40vw;
-  min-width: 20vw;
+#titleText {
+  letter-spacing: 5px;
+  font-weight: bold;
+  background-image: linear-gradient(
+    to bottom,
+    #462523 0,
+    #cb9b51 22%,
+    #f6e27a 45%,
+    #f6f2c0 50%,
+    #f6e27a 55%,
+    #cb9b51 78%,
+    #462523 100%
+  );
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
 }
 
 /* Header Content End */
-
-/* Navigation Bar */
-nav {
-  overflow-x: scroll;
-  display: flex;
-  flex-direction: row;
-  /* justify-content: center; */
-  top: 0;
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-  margin: 0 0.5vh 0.5vh 0.5vh;
-
-  box-sizing: border-box;
-  border-radius: 0 0 20px 20px;
-}
-
-nav::-webkit-scrollbar {
-  display: none;
-}
-
-nav div {
-  display: flex;
-  flex-direction: row;
-  justify-content:space-between;
-  margin: 4vh 1vh 3vh 1vh;
-  /* align-items: center; */
-}
-
-.navBtns {
-  display: inline-block;
-  transition: transform 0.2s ease-in-out;
-  filter: drop-shadow(2px 2px 8px rgba(0, 0, 0, 0.6));
-}
-
-.navBtns:hover {
-  transform: scale(1.2);
-}
-
-#navHome{
-  margin-left: 15%;
-}
-
-#navUserPortal {
-  margin-right:auto;
-}
-
-#navHome img {
-  max-height: 7vh;
-}
-
-#navEvents img {
-  max-height: 6vh;
-  width: auto;
-}
-
-#navAbout img {
-  max-height: 6vh;
-  width: auto;
-}
-#navContact img {
-  max-height: 6vh;
-  width: auto;
-}
-#navPrice img {
-  max-height: 6vh;
-  width: auto;
-}
-#navGallery img {
-  max-height: 6vh;
-  width: auto;
-}
-#navDownloads img {
-  max-height: 6vh;
-  width: auto;
-}
-#navUserPortal img {
-  max-height: 6vh;
-  width: auto;
-}
-
-#navHome img:hover {
-  filter: drop-shadow(0px 0px 10px rgba(255, 255, 255, 1));
-}
-
-#navEvents img:hover {
-  filter: drop-shadow(0px 0px 10px rgb(255, 0, 0, 1));
-}
-
-#navAbout img:hover {
-  filter: drop-shadow(0px 0px 10px rgb(247, 178, 4, 1));
-}
-#navContact img:hover {
-  filter: drop-shadow(0px 0px 10px rgb(255, 230, 7, 1));
-}
-#navPrice img:hover {
-  filter: drop-shadow(0px 0px 10px rgb(12, 128, 3, 1));
-}
-#navGallery img:hover {
-  filter: drop-shadow(0px 0px 10px rgb(26, 8, 188, 1));
-}
-#navDownloads img:hover {
-  filter: drop-shadow(0px 0px 10px rgb(109, 8, 143, 1));
-}
-#navUserPortal img:hover {
-  filter: drop-shadow(0px 0px 10px rgb(205, 17, 226, 1));
-}
-/* Navigation Bar End */
-
 /* Main Content */
 main {
   display: flex;
@@ -176,19 +112,20 @@ main {
   box-sizing: border-box;
 
   border-radius: 20px;
-  margin: 0.5vh;
+  margin: 2vh;
 
   background-image: url("../media/img/WoodCross\ BG\ Element.webp");
   background-repeat: no-repeat;
   background-position: center bottom;
-  background-size: 30% auto;
+  background-size: auto 100%;
   overflow: clip;
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
 main section {
   width: 30vw;
 
-  margin: 3vh;
+  margin-top: 3vh;
   padding: 2vh;
 
   background-color: rgba(0, 0, 0, 0.2);

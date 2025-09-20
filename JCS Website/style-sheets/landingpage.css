@@ -1,31 +1,26 @@
 /* Header Start */
-#welcomeTitle {
-  max-height: 3vh;
-  min-height: 1vh;
-  min-width: 10vw;
-}
+
 .jcsDiv {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
   width: 70%;
-  flex-wrap: wrap;
+  font-family: "Harrington", cursive;
+  font-size: 2rem;
+  color: white;
 }
 
 /* #jewelsTitle, #christianTitle, #schoolTitle{
   min-height: 5vh;
 } */
 
-#jewelsTitle{
-  max-width:32%;
+#jewelsTitle {
+  max-width: 32%;
 }
 
-#christianTitle{
-  max-width:36%;
+#christianTitle {
+  max-width: 36%;
 }
 
-#schoolTitle{
-  max-width:32%;
+#schoolTitle {
+  max-width: 32%;
 }
 /* #christianTitle {
   min-height: 1vh;
@@ -51,12 +46,54 @@
 }
 
 .WHdiv {
-  background-color: rgba(0, 0, 0, 0.3);
-  border-radius: 9px;
+  border-radius: 20px;
   width: 50%;
   margin: 1vh;
+  color: black;
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
+#LPAlertLists {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+#LPAlertLists h3 {
+  color: red;
+  font-size: 3em;
+}
+
+#LPAlertLists ul {
+  width: 60%;
+}
+
+#LPSchedulediv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#LPscheduleJCS {
+  width: 100%;
+  height: 30vh;
+  margin-top: 1vh;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#LPscheduleJCS h3 {
+  width: 100%;
+  font-size: 2em;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+/* Testimonial Section Start */
 #LPtestimonials {
   width: 98%;
   display: flex;
