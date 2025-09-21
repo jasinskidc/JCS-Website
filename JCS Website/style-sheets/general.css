@@ -30,17 +30,12 @@ footer {
   align-items: center;
 }
 
+/* TEMP */
 .UnderWork {
   width: 10vw;
 }
-
-/* TEMP */
-main iframe {
-  width: 80%;
-  height: 80vh;
-}
-
 /* Temp */
+
 /* Header Content */
 
 @font-face {
@@ -56,6 +51,8 @@ header {
   padding: 1vh;
   box-sizing: border-box;
   border-radius: 20px 20px 0 0;
+  font-family: "Harrington", cursive;
+  font-size: 2.5rem;
 }
 
 header div {
@@ -75,7 +72,7 @@ header div {
 }
 
 #headerDiamond {
-  height: 8rem;
+  height: 10rem;
   max-height: 20vh;
   width: auto;
 }
@@ -225,7 +222,6 @@ main {
   flex-grow: 1;
   width: 96.5%;
   box-sizing: border-box;
-
   border-radius: 20px;
   margin: 1vh;
   background-repeat: no-repeat;
@@ -235,7 +231,7 @@ main {
 }
 
 main section {
-  width: 98%;
+  width: 99%;
   margin-top: 1vh;
   background-color: rgba(0, 0, 0, 0.2);
   border: 0px solid transparent;
@@ -260,27 +256,18 @@ section div {
 footer {
   bottom: 0;
   margin: 0.5vh;
-
   box-sizing: border-box;
   border-radius: 20px;
 }
 
 footer div {
-  margin-top: 1vh;
-}
-
-.footer-left {
-  display: flex;
-  flex-direction: column;
-  width: 30vw;
-}
-
-.footer-center {
+  margin: 1vh;
+  height: 96%;
+  width: 32%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 30vw;
 }
 
 #footerDiamond {
@@ -294,11 +281,6 @@ footer div {
   transform: scale(1.1);
 }
 
-.footer-right {
-  display: flex;
-  flex-direction: column;
-  width: 30vw;
-}
 /* Footer Content End */
 
 /* Body End */

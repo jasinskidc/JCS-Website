@@ -2,30 +2,41 @@
 
 .jcsDiv {
   width: 70%;
-  font-family: "Harrington", cursive;
-  font-size: 2.5rem;
   color: white;
 }
 
 /* Header End */
-#LPbriefDescription {
-  width: 98%;
-}
 
-#LPbriefDescription div {
-  background-color: rgba(0, 0, 0, 0.3);
+/* MAIN START */
+
+#DescripDIV {
   border-radius: 9px;
   margin: 1vh;
-  padding: 1vh;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
 }
 
-#LPwhatsHappening {
+section div {
+  padding: 0.5vw;
+}
+
+#DescripDIV img {
+  width: 6vw;
+  margin: 0.5vw;
+}
+
+main iframe {
+  width: 80%;
+  height: 80vh;
+}
+
+#MessageBoard {
   display: flex;
   flex-direction: row;
-  width: 98%;
 }
 
-.WHdiv {
+.MessageBoard {
   border-radius: 20px;
   width: 50%;
   margin: 1vh;
@@ -33,30 +44,30 @@
   background-color: rgba(255, 255, 255, 0.8);
 }
 
-#LPAlertLists {
+#AlertDIV {
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: rgba(255, 255, 255, 0.8);
 }
 
-#LPAlertLists h3 {
+#AlertDIV h3 {
   color: red;
   font-size: 3em;
 }
 
-#LPAlertLists ul {
+#AlertDIV ul {
   width: 60%;
 }
 
-#LPSchedulediv {
+#ScheduleDIV {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-#LPscheduleJCS {
+#scheduleJCS {
   width: 100%;
   height: 30vh;
   margin-top: 1vh;
@@ -67,7 +78,7 @@
   align-items: center;
 }
 
-#LPscheduleJCS h3 {
+#scheduleJCS h3 {
   width: 100%;
   font-size: 2em;
   background-color: rgba(255, 255, 255, 0.8);
