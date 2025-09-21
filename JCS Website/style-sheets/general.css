@@ -19,6 +19,7 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  font-family: "Open Sans", sans-serif;
 }
 
 header,
@@ -119,21 +120,25 @@ main {
   background-position: center bottom;
   background-size: auto 100%;
   overflow: clip;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.6);
 }
 
 main section {
-  width: 30vw;
-
+  width: 96%;
   margin-top: 3vh;
   padding: 2vh;
-
   background-color: rgba(0, 0, 0, 0.2);
   border: 0px solid transparent;
   box-sizing: border-box;
   border-radius: 20px;
-  font: italic small-caps bold 16px/1.5 "Arial", sans-serif;
   color: white;
+}
+
+section div {
+  background-color: rgba(255, 255, 255, 0.4);
+  color: black;
+  border-radius: 12px;
+  margin: 1vh;
 }
 
 .smallImage {

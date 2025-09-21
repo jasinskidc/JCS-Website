@@ -3,29 +3,9 @@
 .jcsDiv {
   width: 70%;
   font-family: "Harrington", cursive;
-  font-size: 2rem;
+  font-size: 2.5rem;
   color: white;
 }
-
-/* #jewelsTitle, #christianTitle, #schoolTitle{
-  min-height: 5vh;
-} */
-
-#jewelsTitle {
-  max-width: 32%;
-}
-
-#christianTitle {
-  max-width: 36%;
-}
-
-#schoolTitle {
-  max-width: 32%;
-}
-/* #christianTitle {
-  min-height: 1vh;
-  width: auto;
-} */
 
 /* Header End */
 #LPbriefDescription {
