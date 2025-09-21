@@ -1,19 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- 
-      TODO:s for (A)LandingPage.html:
-       Make the list, following a tutorial on what meta tags are useful.
-      Create a div for the landing page articles.
-      Get a list of what type of information should be immediately available, then use said list to get that information into the articles.
-      Finish the footer and figure out how the text is properly placed on either side of the logo.
-    -->
-    <title>Jewels Christian School</title>
     <link
       rel="icon"
       href="media/img/JCS_Official_favicon.webp"
       type="image/png"
     />
+    <title>Jewels Christian School</title>
     <meta
       name="description"
       content="JCS is a North Alabama home-school covering that seeks to give students of all ages control of their education."
@@ -28,13 +21,12 @@
     <meta name="robots" content="index, follow" />
     <meta name="theme-color" content="#317EFB" />
     <meta name="language" content="English" />
-    <!-- <link rel="stylesheet" type="text/css" href="css/navBar.css" /> -->
     <link rel="stylesheet" type="text/css" href="style-sheets/general.css" />
-    <link rel="stylesheet" type="text/css" href="style-sheets/navBar.css" />
+    <link rel="stylesheet" type="text/css" href="style-sheets/lightdark.css" />
     <link
       rel="stylesheet"
       type="text/css"
-      href="style-sheets/landingpage.css"
+      href="style-sheets/LandingPage.css"
     />
   </head>
   <body>
@@ -51,7 +43,6 @@
       </div>
     </header>
     <nav id="navBar" aria-label="Main Navigation">
-      <!-- Start of General Nav Bar -->
       <div class="GemKnobs">
         <img src="media/img/redGemKnob.webp" />
       </div>
@@ -97,18 +88,18 @@
       <div class="GemKnobs">
         <img src="media/img/redGemKnob.webp" />
       </div>
-      <!-- End of General Nav Bar -->
     </nav>
+    <!-- PAGE UNDER CONSTRUCTION START -->
+    <img
+      class="UnderWork"
+      src="media/img/workingonit.webp"
+      alt="Site is under construction!"
+    />
+    <!-- PAGE UNDER CONSTRUCTION END -->
     <main>
-      <!-- PAGE UNDER CONSTRUCTION START -->
-      <img
-        class="UnderWork"
-        src="media/img/workingonit.webp"
-        alt="Site is under construction!"
-      />
-      <!-- PAGE UNDER CONSTRUCTION END -->
-      <section id="LPbriefDescripDIV">
-        <div>
+      <section id="EntryMessage">
+        <div id="DescripDIV">
+          <img src="media/img/JCS_Vectorized_Official_LOGO.webp" />
           <h3>
             <bold>Jewels Christian School</bold> is an 'umbrella' cover
             homeschool located and operating for twenty-plus years in North
@@ -116,8 +107,8 @@
             families freedom and control of their education.
           </h3>
         </div>
-        <div id="LPQuotesDIV">
-          <!-- Consider adding Image of Sara and Nana, or something that is specifically JCS -->
+        <div id="QuoteDIV">
+          <!-- <img src="media/img/"/> -->
           <p>
             "Every child is uniquely designed by God, exhibiting different
             colors, shapes, and sizes. Some are shiny, some are rough, and
@@ -125,10 +116,15 @@
             precious little jewels."<br />
             ~ Ms. Sara Lynn Hill
           </p>
+          <!-- <img src="media/img/"/> -->
+          <!-- <p>
+            "This is meemaws quote"<br />
+            ~ Mrs. Norma Jean Hill
+          </p> -->
         </div>
       </section>
-      <section id="LPwhatsHappening">
-        <div class="WHdiv" id="LPAlertLists">
+      <section id="MessageBoard">
+        <div class="WHdiv" id="AlertDIV">
           <h3>
             <u><bold>ATTENTION J.C.S.!!!</bold></u>
           </h3>
@@ -143,7 +139,7 @@
             <!-- <li></li> -->
           </ul>
         </div>
-        <div class="WHdiv" id="LPSchedulediv">
+        <div class="WHdiv" id="ScheduleDIV">
           <h3>
             <span>
               <bold><u>Upcoming Scheduled Events and Meetups</u></bold>
@@ -155,47 +151,11 @@
           ></iframe>
         </div>
       </section>
-      <section id="LPtestimonials">
-        <h3>This is where the future testimonials will go!!</h3>
-        <article class="testimonials" id="testimonial01">
+      <section id="Testimonials">
+        <h2>This is where the future testimonials will go!!</h2>
+        <article class="testArtical" id="test01">
           <h3>Testimonial 01</h3>
-          <div class="personalTestimonialT1">
-            <img class="smallImage" src="media/img/NoPicture.webp" />
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Assumenda dignissimos excepturi accusamus adipisci vero veritatis
-              nam ea dolorem in perferendis impedit, voluptate error at modi,
-              quod esse repellat laudantium veniam?
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Assumenda dignissimos excepturi accusamus adipisci vero veritatis
-              nam ea dolorem in perferendis impedit, voluptate error at modi,
-              quod esse repellat laudantium veniam?
-            </p>
-          </div>
-        </article>
-        <article class="testimonials" id="testimonial02">
-          <h3>Testimonial 02</h3>
-          <div class="personalTestimonialT2">
-            <img class="smallImage" src="media/img/NoPicture.webp" />
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Assumenda dignissimos excepturi accusamus adipisci vero veritatis
-              nam ea dolorem in perferendis impedit, voluptate error at modi,
-              quod esse repellat laudantium veniam?
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Assumenda dignissimos excepturi accusamus adipisci vero veritatis
-              nam ea dolorem in perferendis impedit, voluptate error at modi,
-              quod esse repellat laudantium veniam?
-            </p>
-          </div>
-        </article>
-        <article class="testimonials" id="testimonial03">
-          <h3>Testimonial 03</h3>
-          <div class="personalTestimonialT1">
+          <div class="TestT1">
             <img class="smallImage" src="media/img/NoPicture.webp" />
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -212,29 +172,31 @@
           </div>
         </article>
       </section>
-      <!-- PAGE UNDER CONSTRUCTION START -->
-      <img
-        class="UnderWork"
-        src="media/img/workingonit.webp"
-        alt="<b> Site is under construction! </b>"
-      />
-      <!-- PAGE UNDER CONSTRUCTION END -->
     </main>
+    <!-- PAGE UNDER CONSTRUCTION START -->
+    <img
+      class="UnderWork"
+      src="media/img/workingonit.webp"
+      alt="Site is under construction!"
+    />
+    <!-- PAGE UNDER CONSTRUCTION END -->
     <footer>
       <div class="footer-left">
-        <p>Thanks for visiting JCS</p>
         <p>
           Contact us at: <a href="tel:+12566068142">(256) 606-8142</a> or
           <a href="mailto:cliljewels@hotmail.com">cliljewels@hotmail.com</a>
         </p>
       </div>
       <div class="footer-center">
+        <p>Thanks for visiting <bold>J.C.S.</bold></p>
         <a href="#top"
           ><img
             id="footerDiamond"
             src="media/img/JCS_Vectorized_Official_LOGO.webp"
             alt="JCS Logo || Return to Top Button"
         /></a>
+        <p>Click here to go back to the top!</p>
+        <br />
         <p style="margin-top: 10px">
           Thank you for visiting Jewels Christian School! Empowering students to
           take control of their education.<br />
