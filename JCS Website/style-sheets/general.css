@@ -22,10 +22,10 @@ body {
 }
 
 header,
-nav,
-footer {
+nav {
   width: 98%;
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
 }
@@ -258,20 +258,47 @@ footer {
   margin: 0.5vh;
   box-sizing: border-box;
   border-radius: 20px;
-}
-
-footer div {
-  margin: 1vh;
-  height: 96%;
-  width: 32%;
+  width: 98%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
+footer section {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#footer-top div {
+  height: 96%;
+  width: 32%;
+}
+
+.footer-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 #footerDiamond {
-  height: 12vh;
+  height: 10vh;
   width: auto;
   transition: transform 0.2s ease-in-out;
   filter: drop-shadow(2px 2px 8px rgba(0, 0, 0, 0.4));
@@ -281,6 +308,10 @@ footer div {
   transform: scale(1.1);
 }
 
+label {
+  width: 100%;
+  display: inline-block;
+}
 /* Footer Content End */
 
 /* Body End */
