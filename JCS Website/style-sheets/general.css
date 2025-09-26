@@ -30,6 +30,11 @@ nav {
   align-items: center;
 }
 
+.sticky {
+  position: sticky;
+  top: 0;
+}
+
 /* TEMP */
 .UnderWork {
   width: 10vw;
@@ -52,7 +57,7 @@ header {
   box-sizing: border-box;
   border-radius: 20px 20px 0 0;
   font-family: "Harrington", cursive;
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 
 header div {
@@ -61,10 +66,12 @@ header div {
 
 #titleDiamond {
   transition: drop-shadow 0.5s ease-in-out;
+  transition: transform 0.25s ease-in-out;
 }
 
 #titleDiamond:hover {
   filter: drop-shadow(3px 3px 8px rgba(255, 255, 255, 9));
+  transform: scale(1.1);
 }
 
 .titleElement {
@@ -72,17 +79,19 @@ header div {
 }
 
 #headerDiamond {
-  height: 10rem;
+  height: 8rem;
   max-height: 20vh;
   width: auto;
+  margin: 2.5vh;
 }
 
 #titleText {
   letter-spacing: 5px;
-  font-weight: bold;
   color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
+  padding: 1vw;
+  filter: drop-shadow(8px 8px 10px #333);
 }
 
 /* Header Content End */
@@ -102,6 +111,8 @@ nav {
   border-radius: 0 0 20px 20px;
   min-height: 8vh;
   border: 1vh;
+  padding: 4vh;
+  z-index: 999;
 }
 
 nav::-webkit-scrollbar {
@@ -129,8 +140,7 @@ nav div {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
-  transition: background-image 5s ease-in-out;
-  transition: width 0.3s ease-in-out;
+  transition: transform 0.25s ease-in-out;
   filter: drop-shadow(2px 2px 8px rgba(0, 0, 0, 0.6));
 }
 
@@ -144,8 +154,9 @@ nav div {
 }
 
 .navButtons:hover {
-  min-height: 5vh;
-  min-width: 8vw;
+  height: auto;
+  width: auto;
+  transform: scale(2.5);
 }
 
 #CalendarGem {
@@ -198,16 +209,15 @@ nav div {
 }
 
 #DownloadGem:hover {
-  background-image: url("../media/img/DonwloadIndigoGemNavButton.webp");
+  background-image: url("../media/img/DownloadIndigoGemNavButton.webp");
   filter: drop-shadow(0px 0px 10px rgb(191, 0, 255));
 }
 
-#UserPortalGem {
+.UserPortalGem {
   background-image: url("../media/img/violetGemNavButton.webp");
 }
 
 #UserPortalGem:hover {
-  background-image: url("../media/img/SignUpVioletGemNavButton.webp");
   filter: drop-shadow(0px 0px 10px rgb(230, 0, 255));
 }
 
@@ -232,16 +242,17 @@ main {
 
 main section {
   width: 99%;
-  margin-top: 1vh;
-  background-color: rgba(0, 0, 0, 0.2);
-  border: 0px solid transparent;
   box-sizing: border-box;
   border-radius: 20px;
+  margin: 0.5vh;
+  padding: 0.5vh;
 }
 
 section div {
   border-radius: 12px;
-  margin: 1vh;
+  padding: 1vh;
+  margin: 0.5vh;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.373);
 }
 
 .smallImage {
@@ -285,6 +296,23 @@ footer section {
   justify-content: center;
   align-items: center;
 }
+
+.SMiconLinks {
+  align-items: center;
+  justify-content: space-around;
+  width: 2vw;
+  margin: 1vw;
+  transition: transform 0.25s ease-in-out;
+}
+
+.SMiconLinks:hover {
+  transform: scale(1.5);
+}
+
+.smallIcons {
+  width: 3vw;
+}
+
 .footer-center {
   display: flex;
   flex-direction: column;
@@ -295,6 +323,13 @@ footer section {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+#AdminSignIn{
+  width: 100%;
+  background-color: transparent;
+  border-radius: none;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0);
 }
 
 #footerDiamond {
@@ -315,3 +350,28 @@ label {
 /* Footer Content End */
 
 /* Body End */
+
+/* Related to scripts */
+
+.newVisitor {
+  background-image: url("../media/img/violetGemNavButton.webp");
+}
+
+.hasVisited {
+  background-image: url("../media/img/violetGemNavButton.webp");
+}
+
+.isSignedIn {
+  background-image: url("../media/img/violetGemNavButton.webp");
+}
+.newVisitor:hover {
+  background-image: url("../media/img/SignUpVioletGemNavButton.webp");
+}
+
+.hasVisited:hover {
+  background-image: url("../media/img/SignInVioletGemNavButton.webp");
+}
+
+.isSignedIn:hover {
+  background-image: url("../media/img/DashboardVioletGemNavButton.webp");
+}

@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="icon"
+      href="../media/img/JCS_Official_favicon.webp"
+      type="image/png"
+    />
+    <title>JCS Sign-Up</title>
+    <meta
+      name="description"
+      content="JCS is a North Alabama home-school covering that seeks to give students of all ages control of their education."
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Charles Dylan Jasinski" />
+    <meta
+      name="keywords"
+      content="Jewel's Christian School, JCS, Christian School, Home School, North Alabama"
+    />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#317EFB" />
+    <meta name="language" content="English" />
+    <link rel="stylesheet" type="text/css" href="../style-sheets/general.css" />
+    <link rel="stylesheet" type="text/css" href="../style-sheets/lightdark.css" />
+    <link rel="stylesheet" type="text/css" href="../style-sheets/SignUp.css" />
+  </head>
+  <body>
+    <header>
+      <a href="../LandingPage.html" id="titleDiamond" aria-current="page"
+        ><img
+          class="titleElement"
+          id="headerDiamond"
+          src="../media/img/JCS_Vectorized_Official_LOGO.webp"
+          alt="JCS Logo"
+      /></a>
+      <div class="jcsDiv">
+        <h1 id="titleText"><strong>JCS: Sign-Up</strong></h1>
+      </div>
+    </header>
+    <nav class="sticky" id="navBar" aria-label="Main Navigation">
+      <div class="GemKnobs">
+        <img src="../media/img/redGemKnob.webp" />
+      </div>
+      <div class="navButtons" id="CalendarGem">
+        <a href="../Calendar.html">JCSCA</a>
+      </div>
+      <div class="GemKnobs">
+        <img src="../media/img/orangeGemKnob.webp" />
+      </div>
+      <div class="navButtons" id="ContactGem">
+        <a href="../ContactJCS.html">JCSCO</a>
+      </div>
+      <div class="GemKnobs">
+        <img src="../media/img/yellowGemKnob.webp" />
+      </div>
+      <div class="navButtons" id="AboutGem">
+        <a href="../About.html">JCSAB</a>
+      </div>
+      <div class="GemKnobs">
+        <img src="../media/img/greenGemKnob.webp" />
+      </div>
+      <div class="navButtons" id="PriceGem">
+        <a href="../Pricing.html">JCSPR</a>
+      </div>
+      <div class="GemKnobs">
+        <img src="../media/img/blueGemKnob.webp" />
+      </div>
+      <div class="navButtons" id="GalleryGem">
+        <a href="../Gallery.html">JCSGA</a>
+      </div>
+      <div class="GemKnobs">
+        <img src="../media/img/indigoGemKnob.webp" />
+      </div>
+      <div class="navButtons" id="DownloadGem">
+        <a href="../Downloads.html">JCSDL</a>
+      </div>
+      <div class="GemKnobs">
+        <img src="../media/img/violetGemKnob.webp" />
+      </div>
+      <div class="navButtons UserPortalGem" id="UserPortalGem">
+        <a href="../UserPortal.html" id="UPlinkSwitch">JCSUP</a>
+      </div>
+    </nav>
+    <main>
+        <!-- User is going to select Parent, student, or admin. Once selected one of these application forms
+         will be revealed. Once the chosen application is revealed the student id, if applicable,
+         the first and last name and at-least 1 form of contact, phone and/or email is required along 
+         with a personal password. admin is locked behind the admin pass code that only i will know
+         so that only a specific set of people can even apply for admin ie sara. Passwords will have a timed
+         toggle to quickly reveal the password you have already type.
+         passwords will need to be 6-8 characters long, have a number, have a capital letter, and a symbol to be
+         used. Only students have student ids and sara will need to have a student id generator made, through the
+         site probably so that the id will be unique and so that only those who have already applied and been 
+         accepted into JCS will be able to join the site. parents will also need to have a child already
+         part of jcs ie have an id and have a child that has already made their account on the website so that
+         only parents with children can use the site. -->
+        <section>
+          <div>
+            <form>
+              <div class="wrapper">
+                <p>Which of these best describe you?</p>
+              </div>
+              <div class="wrap">
+                <input type="radio" name="RoleChoice" id="Parentrole-input" value="Parent" >
+                <label for="Parentrole-input">Parent</label>
+                <input type="radio" name="RoleChoice" id="Studentrole-input" value="Student">
+                <label for="Studentrole-input">Student</label>
+                <input type="radio" name="RoleChoice" id="Adminrole-input" value="Admin">
+                <label for="Adminrole-input">Administrator</label>
+                </div>
+            </form>
+          </div>
+        </section>
+        <section class="stduentSignup">
+          <div>
+          <form >
+            <div class="wrapper">
+              <h5>**(ID is assigned by admin during initial Meetup)**</h5>
+              <label for="studentID">*Student ID:</label>
+              <input required type="text" name="studentID" id="studentID-input" placeholder=" ZA12345">
+            </div>
+            <div class="wrapper">
+              <label for="Fname">*First Name:</label>
+              <input required type="text" name="Fname" id="Fname-input" placeholder=" FirstName">
+            </div>
+            <div class="wrapper">
+              <label for="Lname">*Last Name:</label>
+              <input required type="text" name="Lname" id="Lname-input" placeholder=" LastName">
+            </div>
+            <div class="wrapper">
+              <label for="Email">E-mail:</label>
+              <input type="email" name="Email" id="Email-input" placeholder=" firstandlastname@email.com">
+            </div>
+            <div class="wrapper">
+              <h5>**(Please remember your password!)**</h5>
+              <label for="password">Create Password:</label>
+              <input type="password" name="password" id="password-input" placeholder="  PASSWORD">
+            </div>
+            <div class="wrapper">
+              <label for="repeat-password">Repeat Password:</label>
+              <input type="password" name="repeat-password" id="repeat-password-input" placeholder="  REPEAT-PASSWORD">
+            </div>
+            <div class="wrapper">
+              <button type="submit">Submit</button>            
+            </div>
+          </form>
+        </div>
+      </section>
+        <section class="parentSignup">
+          <div>
+          <form >
+            <div class="wrapper">
+              <h5>**(ID is assigned by admin during initial Meetup)**</h5>
+              <label for="studentID">*Student ID:</label>
+              <input required type="text" name="studentID" id="studentID-input" placeholder=" ZA12345">
+            </div>
+            <div class="wrapper">
+              <label for="Fname">*First Name:</label>
+              <input required type="text" name="Fname" id="Fname-input" placeholder=" FirstName">
+            </div>
+            <div class="wrapper">
+              <label for="Lname">*Last Name:</label>
+              <input required type="text" name="Lname" id="Lname-input" placeholder=" LastName">
+            </div>
+            <div class="wrapper">
+              <label for="Email">E-mail:</label>
+              <input type="email" name="Email" id="Email-input" placeholder=" firstandlastname@email.com">
+            </div>
+            <div class="wrapper">
+              <h5>**(Please remember your password!)**</h5>
+              <label for="password">Create Password:</label>
+              <input type="password" name="password" id="password-input" placeholder="  PASSWORD">
+            </div>
+            <div class="wrapper">
+              <label for="repeat-password">Repeat Password:</label>
+              <input type="password" name="repeat-password" id="repeat-password-input" placeholder="  REPEAT-PASSWORD">
+            </div>
+            <div class="wrapper">
+              <button type="submit">Submit</button>            
+            </div>
+          </form>
+        </div>
+      </section>
+        <section class="adminSignup">
+          <div>
+          <form >
+            <div class="wrapper">
+              <h5>**(ID is assigned by admin during initial Meetup)**</h5>
+              <label for="studentID">*Student ID:</label>
+              <input required type="text" name="studentID" id="studentID-input" placeholder=" ZA12345">
+            </div>
+            <div class="wrapper">
+              <label for="Fname">*First Name:</label>
+              <input required type="text" name="Fname" id="Fname-input" placeholder=" FirstName">
+            </div>
+            <div class="wrapper">
+              <label for="Lname">*Last Name:</label>
+              <input required type="text" name="Lname" id="Lname-input" placeholder=" LastName">
+            </div>
+            <div class="wrapper">
+              <label for="Email">E-mail:</label>
+              <input type="email" name="Email" id="Email-input" placeholder=" firstandlastname@email.com">
+            </div>
+            <div class="wrapper">
+              <h5>**(Please remember your password!)**</h5>
+              <label for="password">Create Password:</label>
+              <input type="password" name="password" id="password-input" placeholder="  PASSWORD">
+            </div>
+            <div class="wrapper">
+              <label for="repeat-password">Repeat Password:</label>
+              <input type="password" name="repeat-password" id="repeat-password-input" placeholder="  REPEAT-PASSWORD">
+            </div>
+            <div class="wrapper">
+              <button type="submit">Submit</button>            
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <section id="footer-top">
+        <div class="footer-left">
+          <h4>Contact us at:</h4>
+          <p>
+            <a href="tel:+12566068142">(256) 606-8142</a> or
+            <a href="mailto:cliljewels@hotmail.com">cliljewels@hotmail.com</a>
+          </p>
+          <br/>
+          <hr/>
+          <h4>Check us out on these sites!:</h4>
+          <section id="socialMediaLinks">
+            <a href="https://www.facebook.com/profile.php?id=100057479h58292"><img src="../media/img/icon_Facebook.webp" alt="||FACEBOOK" class="SMiconLinks"></a>
+            <a href="https://x.com/lilJewelsCS"><img src="../media/img/icon_X.webp" alt="||X" class="SMiconLinks"></a>
+            <a href="https://discord.gg/mB4fqq8PZc"><img src="../media/img/icon_Discord.webp" alt="||DISCORD" class="SMiconLinks smallIcons"></a>
+            <a href="https://www.youtube.com/@JewelsChristianSchool"><img src="../media/img/icon_Youtube.webp" alt="||YOUTUBE||" class="SMiconLinks smallIcons"></a>
+          </section>
+        </div>
+        <div class="footer-center">
+          <p>Click here to go back to the top!</p>
+          <a href="#top"
+            ><img
+              id="footerDiamond"
+              src="../media/img/JCS_Vectorized_Official_LOGO.webp"
+              alt="JCS Logo || Return to Top Button"
+          /></a>
+          <p>
+          <hr />
+            Thank you for visiting <strong>Jewels Christian School!</strong>
+            Interested in joining?
+            <a href="">Apply today!(link doesn't go anywhere yet!)</a>
+          </p>
+        </div>
+        <div class="footer-right">
+          <hr />
+          <form id="AdminSignIn">
+            <label><h4>Admin Log-in</h4></label><br />
+            <label for="adminPW">Name:</label>
+            <input type="text" id="adminUN" name="adminUN" /><br />
+            <label for="adminPW">Password:</label>
+            <input type="text" id="adminPW" name="adminPW" /><br />
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+      </section>
+      <section id="footer-bottom">
+        <div>
+          <span>
+              ||<a href="../About/legal/JCS_PrivacyPolicy.html">PRIVACY POLICY</a> ||
+            <a href="../About/legal/JCS_TOS.html">TERMS OF SERVICE</a> ||
+            <a href="../ContactJCS/help/FAQ.html">F.A.Q.</a> ||
+          </span>
+        </div>
+      </section>
+    </footer>
+    <script src="../scripts/general.js"></script> 
+</body>
+</html>
