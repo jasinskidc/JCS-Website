@@ -55,3 +55,15 @@ form div {
   justify-content: space-between;
   width: 100%;
 }
+
+/* Related to Javascript */
+.studentSignup {
+}
+
+.parentSignup {
+  display: none;
+}
+
+.adminSignup {
+  display: none;
+}

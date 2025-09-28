@@ -90,7 +90,7 @@ header div {
   color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
-  padding: 1vw;
+  padding: 2vw;
   filter: drop-shadow(8px 8px 10px #333);
 }
 
@@ -106,12 +106,11 @@ nav {
   top: 0;
   -ms-overflow-style: none;
   scrollbar-width: none;
-  margin: auto 3vh;
   box-sizing: border-box;
   border-radius: 0 0 20px 20px;
   min-height: 8vh;
   border: 1vh;
-  padding: 4vh;
+  padding: 0.5vh;
   z-index: 999;
 }
 
@@ -325,7 +324,7 @@ footer section {
   justify-content: center;
 }
 
-#AdminSignIn{
+#AdminSignIn {
   width: 100%;
   background-color: transparent;
   border-radius: none;
@@ -346,6 +345,24 @@ footer section {
 label {
   width: 100%;
   display: inline-block;
+}
+
+.submitBtn {
+  padding: 0.5vh;
+  margin: 1vh;
+  filter: drop-shadow(2px 2px 8px rgba(0, 0, 0, 0.514));
+  border-radius: 30%;
+  font-family: Harrington;
+  font-weight: bolder;
+  font-size: large;
+  color: rgb(0, 0, 0);
+  transition: transform 0.1s ease-in-out;
+}
+
+.submitBtn:hover {
+  transform: scale(1.1);
+  background-color: white;
+  filter: drop-shadow(2px 2px 8px rgba(255, 255, 255, 0.632));
 }
 /* Footer Content End */
 

@@ -28,64 +28,64 @@
   <body>
     <header>
       <a href="../LandingPage.html" id="titleDiamond" aria-current="page"
-        ><img
-          class="titleElement"
-          id="headerDiamond"
-          src="../media/img/JCS_Vectorized_Official_LOGO.webp"
-          alt="JCS Logo"
+      ><img
+      class="titleElement"
+      id="headerDiamond"
+      src="../media/img/JCS_Vectorized_Official_LOGO.webp"
+      alt="JCS Logo"
       /></a>
       <div class="jcsDiv">
         <h1 id="titleText"><strong>JCS: Sign-Up</strong></h1>
       </div>
     </header>
-    <nav class="sticky" id="navBar" aria-label="Main Navigation">
-      <div class="GemKnobs">
-        <img src="../media/img/redGemKnob.webp" />
-      </div>
-      <div class="navButtons" id="CalendarGem">
-        <a href="../Calendar.html">JCSCA</a>
-      </div>
-      <div class="GemKnobs">
-        <img src="../media/img/orangeGemKnob.webp" />
-      </div>
-      <div class="navButtons" id="ContactGem">
-        <a href="../ContactJCS.html">JCSCO</a>
-      </div>
-      <div class="GemKnobs">
-        <img src="../media/img/yellowGemKnob.webp" />
-      </div>
-      <div class="navButtons" id="AboutGem">
-        <a href="../About.html">JCSAB</a>
-      </div>
-      <div class="GemKnobs">
-        <img src="../media/img/greenGemKnob.webp" />
-      </div>
-      <div class="navButtons" id="PriceGem">
-        <a href="../Pricing.html">JCSPR</a>
-      </div>
-      <div class="GemKnobs">
-        <img src="../media/img/blueGemKnob.webp" />
-      </div>
-      <div class="navButtons" id="GalleryGem">
-        <a href="../Gallery.html">JCSGA</a>
-      </div>
-      <div class="GemKnobs">
-        <img src="../media/img/indigoGemKnob.webp" />
-      </div>
-      <div class="navButtons" id="DownloadGem">
-        <a href="../Downloads.html">JCSDL</a>
-      </div>
-      <div class="GemKnobs">
-        <img src="../media/img/violetGemKnob.webp" />
-      </div>
-      <div class="navButtons UserPortalGem" id="UserPortalGem">
-        <a href="../UserPortal.html" id="UPlinkSwitch">JCSUP</a>
-      </div>
-    </nav>
-    <main>
+      <nav class="sticky" id="navBar" aria-label="Main Navigation">
+        <div class="GemKnobs">
+          <img src="../media/img/redGemKnob.webp" />
+        </div>
+        <div class="navButtons" id="CalendarGem">
+          <a href="../Calendar.html">JCSCA</a>
+        </div>
+        <div class="GemKnobs">
+          <img src="../media/img/orangeGemKnob.webp" />
+        </div>
+        <div class="navButtons" id="ContactGem">
+          <a href="../ContactJCS.html">JCSCO</a>
+        </div>
+        <div class="GemKnobs">
+          <img src="../media/img/yellowGemKnob.webp" />
+        </div>
+        <div class="navButtons" id="AboutGem">
+          <a href="../About.html">JCSAB</a>
+        </div>
+        <div class="GemKnobs">
+          <img src="../media/img/greenGemKnob.webp" />
+        </div>
+        <div class="navButtons" id="PriceGem">
+          <a href="../Pricing.html">JCSPR</a>
+        </div>
+        <div class="GemKnobs">
+          <img src="../media/img/blueGemKnob.webp" />
+        </div>
+        <div class="navButtons" id="GalleryGem">
+          <a href="../Gallery.html">JCSGA</a>
+        </div>
+        <div class="GemKnobs">
+          <img src="../media/img/indigoGemKnob.webp" />
+        </div>
+        <div class="navButtons" id="DownloadGem">
+          <a href="../Downloads.html">JCSDL</a>
+        </div>
+        <div class="GemKnobs">
+          <img src="../media/img/violetGemKnob.webp" />
+        </div>
+        <div class="navButtons UserPortalGem" id="UserPortalGem">
+          <a href="../UserPortal.html" id="UPlinkSwitch">JCSUP</a>
+        </div>
+      </nav>
+      <main>
         <!-- User is going to select Parent, student, or admin. Once selected one of these application forms
-         will be revealed. Once the chosen application is revealed the student id, if applicable,
-         the first and last name and at-least 1 form of contact, phone and/or email is required along 
+        will be revealed. Once the chosen application is revealed the student id, if applicable,
+        the first and last name and at-least 1 form of contact, phone and/or email is required along 
          with a personal password. admin is locked behind the admin pass code that only i will know
          so that only a specific set of people can even apply for admin ie sara. Passwords will have a timed
          toggle to quickly reveal the password you have already type.
@@ -104,7 +104,7 @@
               <div class="wrap">
                 <input type="radio" name="RoleChoice" id="Parentrole-input" value="Parent" >
                 <label for="Parentrole-input">Parent</label>
-                <input type="radio" name="RoleChoice" id="Studentrole-input" value="Student">
+                <input type="radio" name="RoleChoice" id="Studentrole-input" value="Student" checked>
                 <label for="Studentrole-input">Student</label>
                 <input type="radio" name="RoleChoice" id="Adminrole-input" value="Admin">
                 <label for="Adminrole-input">Administrator</label>
@@ -141,20 +141,55 @@
               <label for="repeat-password">Repeat Password:</label>
               <input type="password" name="repeat-password" id="repeat-password-input" placeholder="  REPEAT-PASSWORD">
             </div>
-            <div class="wrapper">
-              <button type="submit">Submit</button>            
-            </div>
           </form>
         </div>
       </section>
-        <section class="parentSignup">
-          <div>
+      <section hidden class="parentSignup">
+        <div>
           <form >
+            <div class="wrapper">
+              <label for="Fname">*First Name:</label>
+              <input required type="text" name="Fname" id="Fname-input" placeholder=" FirstName">
+            </div>
+            <div class="wrapper">
+              <label for="Lname">*Last Name:</label>
+              <input required type="text" name="Lname" id="Lname-input" placeholder=" LastName">
+            </div>
+            <div class="wrapper">
+              <label for="PhoneNum">Phone Number:</label>
+              <input type="tel" name="PhoneNum" id="Phone-input" placeholder="123-456-7890">
+            </div>
+            <div class="wrapper">
+              <label for="Email">E-mail:</label>
+              <input type="email" name="Email" id="Email-input" placeholder=" firstandlastname@email.com">
+            </div>
+            <div class="wrapper">
+              <h5>**(Please remember your password!)**</h5>
+              <label for="password">Create Password:</label>
+              <input type="password" name="password" id="password-input" placeholder="  PASSWORD">
+            </div>
+            <div class="wrapper">
+              <label for="repeat-password">Repeat Password:</label>
+              <input type="password" name="repeat-password" id="repeat-password-input" placeholder="  REPEAT-PASSWORD">
+            </div>
             <div class="wrapper">
               <h5>**(ID is assigned by admin during initial Meetup)**</h5>
               <label for="studentID">*Student ID:</label>
               <input required type="text" name="studentID" id="studentID-input" placeholder=" ZA12345">
             </div>
+            <div class="wrapper">
+              <label for="studentName-01">*Child's Full Name:</label>
+              <input required type="text" name="studentName-01" id="studentName-01-input" placeholder="John h. Doe">
+            </div>
+            <div class="wrapper">
+              <button id="childAdd">Add Another Student</button>
+            </div>
+          </form>
+        </div>
+      </section>
+      <section hidden class="adminSignup">
+        <div>
+          <form >
             <div class="wrapper">
               <label for="Fname">*First Name:</label>
               <input required type="text" name="Fname" id="Fname-input" placeholder=" FirstName">
@@ -176,47 +211,21 @@
               <label for="repeat-password">Repeat Password:</label>
               <input type="password" name="repeat-password" id="repeat-password-input" placeholder="  REPEAT-PASSWORD">
             </div>
-            <div class="wrapper">
-              <button type="submit">Submit</button>            
-            </div>
           </form>
         </div>
       </section>
-        <section class="adminSignup">
+        <section>
           <div>
-          <form >
+          <form>
             <div class="wrapper">
-              <h5>**(ID is assigned by admin during initial Meetup)**</h5>
-              <label for="studentID">*Student ID:</label>
-              <input required type="text" name="studentID" id="studentID-input" placeholder=" ZA12345">
+              <h4>Check to make sure the following is accurate <strong>before</strong> you click submit!</h4>
             </div>
             <div class="wrapper">
-              <label for="Fname">*First Name:</label>
-              <input required type="text" name="Fname" id="Fname-input" placeholder=" FirstName">
+              <button class="submitBtn" type="submit">Submit</button>            
             </div>
-            <div class="wrapper">
-              <label for="Lname">*Last Name:</label>
-              <input required type="text" name="Lname" id="Lname-input" placeholder=" LastName">
-            </div>
-            <div class="wrapper">
-              <label for="Email">E-mail:</label>
-              <input type="email" name="Email" id="Email-input" placeholder=" firstandlastname@email.com">
-            </div>
-            <div class="wrapper">
-              <h5>**(Please remember your password!)**</h5>
-              <label for="password">Create Password:</label>
-              <input type="password" name="password" id="password-input" placeholder="  PASSWORD">
-            </div>
-            <div class="wrapper">
-              <label for="repeat-password">Repeat Password:</label>
-              <input type="password" name="repeat-password" id="repeat-password-input" placeholder="  REPEAT-PASSWORD">
-            </div>
-            <div class="wrapper">
-              <button type="submit">Submit</button>            
-            </div>
-          </form>
-        </div>
-      </section>
+          </form> 
+        </section>
+      </div>
     </main>
     <footer>
       <section id="footer-top">
@@ -259,7 +268,7 @@
             <input type="text" id="adminUN" name="adminUN" /><br />
             <label for="adminPW">Password:</label>
             <input type="text" id="adminPW" name="adminPW" /><br />
-            <button type="submit">Submit</button>
+            <button class="submitBtn" type="submit">Log-In</button>
           </form>
         </div>
       </section>
