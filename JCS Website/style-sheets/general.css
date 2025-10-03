@@ -1,373 +1,103 @@
 /*  Plain text=Tags: and their children. "." = element class "#" = element id */
-/* Hostinger probably does not support VH or similar, they do support vh. Go figure! */
 * {
   margin: 0;
   padding: 0;
 }
 
-/* Body Start */
-
-body {
-  contain: paint;
-  min-height: 100vh;
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  font-family: "Open Sans", sans-serif;
-}
-
-header,
-nav {
-  width: 98%;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-
-.sticky {
-  position: sticky;
-  top: 0;
+@font-face {
+  font-family: 'Harrington';
+  src: url('../media/fonts/HARRINGT.TTF') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
 
 /* TEMP */
-.UnderWork {
-  width: 10vw;
-}
-/* Temp */
-
-/* Header Content */
-
-@font-face {
-  font-family: "Harrington";
-  src: url("../media/fonts/HARRINGT.TTF") format("truetype");
+/* Styling for all unvisited links */
+a {
+  color: lightgray;
+  text-decoration: none;
 }
 
-header {
-  display: flex;
+/* Styling for visited links */
+a:visited {
+  color: lightgray;
+}
+
+/* Styling for links when hovered over */
+/* a:hover {
+  transform: scale(1.5);
+} */
+
+a text:hover{
+  mix-blend-mode: difference;
+  /* filter: invert(1); */
+}
+
+/* Styling for active links (while being clicked) */
+a:active {
+  color: green;
+}
+/* TEMP */
+/* HEADER */
+header{
+  background-color: #7851A9;
+  display:flex;
   flex-direction: row;
-  justify-content: start;
-  margin: 0.5vh 0.5vh 0vh 0.5vh;
-  padding: 1vh;
-  box-sizing: border-box;
-  border-radius: 20px 20px 0 0;
-  font-family: "Harrington", cursive;
-  font-size: 2rem;
-}
-
-header div {
-  margin: 2%;
-}
-
-#titleDiamond {
-  transition: drop-shadow 0.5s ease-in-out;
-  transition: transform 0.25s ease-in-out;
-}
-
-#titleDiamond:hover {
-  filter: drop-shadow(3px 3px 8px rgba(255, 255, 255, 9));
-  transform: scale(1.1);
-}
-
-.titleElement {
-  filter: drop-shadow(2px 2px 8px rgba(0, 0, 0, 0.6));
-}
-
-#headerDiamond {
-  height: 8rem;
-  max-height: 20vh;
-  width: auto;
-  margin: 2.5vh;
-}
-
-#titleText {
-  letter-spacing: 5px;
-  color: transparent;
-  -webkit-background-clip: text;
-  background-clip: text;
-  padding: 2vw;
-  filter: drop-shadow(8px 8px 10px #333);
-}
-
-/* Header Content End */
-/* Nav Start */
-nav {
-  flex-wrap: wrap;
-  /* overflow-x: wrap; */
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
   align-items: center;
-  top: 0;
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-  box-sizing: border-box;
-  border-radius: 0 0 20px 20px;
-  min-height: 8vh;
-  border: 1vh;
-  padding: 0.5vh;
-  z-index: 999;
+  font-family: 'Harrington', sans-serif;
+  font-size: larger;
+  font-weight: 200;
+  color: gold;
 }
 
-nav::-webkit-scrollbar {
-  display: none;
+header div{
+  margin: 1vw;
 }
 
-nav div {
+#headerDiamond img{
+  width: 7vw;
+  min-width: 40px;
+}
+
+.titleText{
+  text-shadow: 2px 2px 4px black;
+}
+
+footer{
+  background-color: #7851A9;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: white;
+}
+
+footer div{
+  margin: 0.5vw;
+  flex:1;
+}
+
+.footer-top{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: 0.5vh;
-  align-items: center;
+  /* align-items: center; */
 }
 
-.GemKnobs img {
-  height: 25px;
-  width: auto;
-}
-
-.navButtons {
-  max-height: 4vh;
-  max-width: 6vw;
-  min-height: 2rem;
-  min-width: 3rem;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-  transition: transform 0.25s ease-in-out;
-  filter: drop-shadow(2px 2px 8px rgba(0, 0, 0, 0.6));
-}
-
-.navButtons a {
-  display: block;
-  width: 100%;
-  height: 100%;
-  text-decoration: none;
-  color: transparent;
-  text-align: center;
-}
-
-.navButtons:hover {
-  height: auto;
-  width: auto;
-  transform: scale(2.5);
-}
-
-#CalendarGem {
-  background-image: url("../media/img/redGemNavButton.webp");
-}
-
-#CalendarGem:hover {
-  background-image: url("../media/img/CalendarRedGemNavButton.webp");
-  filter: drop-shadow(0px 0px 10px rgb(255, 0, 0));
-}
-
-#ContactGem {
-  background-image: url("../media/img/orangeGemNavButton.webp");
-}
-
-#ContactGem:hover {
-  background-image: url("../media/img/ContactOrangeGemNavButton.webp");
-  filter: drop-shadow(0px 0px 10px rgb(255, 183, 0));
-}
-
-#AboutGem {
-  background-image: url("../media/img/yellowGemNavButton.webp");
-}
-
-#AboutGem:hover {
-  background-image: url("../media/img/AboutYellowGemNavButton.webp");
-  filter: drop-shadow(0px 0px 10px rgb(255, 230, 0));
-}
-
-#PriceGem {
-  background-image: url("../media/img/greenGemNavButton.webp");
-}
-
-#PriceGem:hover {
-  background-image: url("../media/img/PriceGreenGemNavButton.webp");
-  filter: drop-shadow(0px 0px 10px rgb(17, 255, 0));
-}
-
-#GalleryGem {
-  background-image: url("../media/img/blueGemNavButton.webp");
-}
-
-#GalleryGem:hover {
-  background-image: url("../media/img/GalleryBlueGemNavButton.webp");
-  filter: drop-shadow(0px 0px 10px rgb(25, 0, 255));
-}
-
-#DownloadGem {
-  background-image: url("../media/img/indigoGemNavButton.webp");
-}
-
-#DownloadGem:hover {
-  background-image: url("../media/img/DownloadIndigoGemNavButton.webp");
-  filter: drop-shadow(0px 0px 10px rgb(191, 0, 255));
-}
-
-.UserPortalGem {
-  background-image: url("../media/img/violetGemNavButton.webp");
-}
-
-#UserPortalGem:hover {
-  filter: drop-shadow(0px 0px 10px rgb(230, 0, 255));
-}
-
-/* Navigation Bar End */
-
-/* Main Content */
-main {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
-  width: 96.5%;
-  box-sizing: border-box;
-  border-radius: 20px;
-  margin: 1vh;
-  background-repeat: no-repeat;
-  background-position: center bottom;
-  background-size: auto 100%;
-  overflow: clip;
-}
-
-main section {
-  width: 99%;
-  box-sizing: border-box;
-  border-radius: 20px;
-  margin: 0.5vh;
-  padding: 0.5vh;
-}
-
-section div {
-  border-radius: 12px;
-  padding: 1vh;
-  margin: 0.5vh;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.373);
-}
-
-.smallImage {
-  border: 1px solid transparent;
-  border-radius: 15px;
-  height: 14vh;
-}
-
-/* Main Content End */
-
-/* Footer Content */
-footer {
-  bottom: 0;
-  margin: 0.5vh;
-  box-sizing: border-box;
-  border-radius: 20px;
-  width: 98%;
-  display: flex;
+.top-footer{
+  display:flex;  
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-footer section {
-  height: 100%;
-  width: 100%;
+.footer-bottom{
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-
-#footer-top div {
-  height: 96%;
-  width: 32%;
-}
-
-.footer-left {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.SMiconLinks {
-  align-items: center;
-  justify-content: space-around;
-  width: 2vw;
-  margin: 1vw;
-  transition: transform 0.25s ease-in-out;
-}
-
-.SMiconLinks:hover {
-  transform: scale(1.5);
-}
-
-.smallIcons {
-  width: 3vw;
-}
-
-.footer-center {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.footer-right {
-  display: flex;
-  flex-direction: column;
   justify-content: center;
 }
 
-#AdminSignIn {
-  width: 100%;
-  background-color: transparent;
-  border-radius: none;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0);
+.footer-bottom a{
+  margin: 0.5vw;
 }
-
-#footerDiamond {
-  height: 10vh;
-  width: auto;
-  transition: transform 0.2s ease-in-out;
-  filter: drop-shadow(2px 2px 8px rgba(0, 0, 0, 0.4));
-}
-
-#footerDiamond:hover {
-  transform: scale(1.1);
-}
-
-label {
-  width: 100%;
-  display: inline-block;
-}
-
-.submitBtn {
-  padding: 0.5vh;
-  margin: 1vh;
-  filter: drop-shadow(2px 2px 8px rgba(0, 0, 0, 0.514));
-  border-radius: 30%;
-  font-family: Harrington;
-  font-weight: bolder;
-  font-size: large;
-  color: rgb(0, 0, 0);
-  transition: transform 0.1s ease-in-out;
-}
-
-.submitBtn:hover {
-  transform: scale(1.1);
-  background-color: white;
-  filter: drop-shadow(2px 2px 8px rgba(255, 255, 255, 0.632));
-}
-/* Footer Content End */
-
-/* Body End */
-
 /* Related to scripts */
 
 .newVisitor {
