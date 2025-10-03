@@ -4,6 +4,16 @@
   padding: 0;
 }
 
+body{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main{
+  flex-grow: 1;
+}
+
 @font-face {
   font-family: 'Harrington';
   src: url('../media/fonts/HARRINGT.TTF') format('truetype');
@@ -36,67 +46,6 @@ a text:hover{
 /* Styling for active links (while being clicked) */
 a:active {
   color: green;
-}
-/* TEMP */
-/* HEADER */
-header{
-  background-color: #7851A9;
-  display:flex;
-  flex-direction: row;
-  align-items: center;
-  font-family: 'Harrington', sans-serif;
-  font-size: larger;
-  font-weight: 200;
-  color: gold;
-}
-
-header div{
-  margin: 1vw;
-}
-
-#headerDiamond img{
-  width: 7vw;
-  min-width: 40px;
-}
-
-.titleText{
-  text-shadow: 2px 2px 4px black;
-}
-
-footer{
-  background-color: #7851A9;
-  display:flex;
-  flex-direction: column;
-  justify-content: space-between;
-  color: white;
-}
-
-footer div{
-  margin: 0.5vw;
-  flex:1;
-}
-
-.footer-top{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  /* align-items: center; */
-}
-
-.top-footer{
-  display:flex;  
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.footer-bottom{
-  display: flex;
-  justify-content: center;
-}
-
-.footer-bottom a{
-  margin: 0.5vw;
 }
 /* Related to scripts */
 

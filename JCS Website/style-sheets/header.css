@@ -1,0 +1,22 @@
+/* HEADER */
+header{
+  background-color: #7851A9;
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  font-family: 'Harrington', sans-serif;
+  color: gold;
+}
+
+header div{
+  margin: 1vw;
+}
+
+#headerDiamond img{
+  width: 7vw;
+  min-width: 40px;
+}
+
+.titleText{
+  text-shadow: 2px 2px 4px black;
+}
