@@ -1,0 +1,72 @@
+.mainNavBar{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #7851A9;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  font-family: 'Lexend', sans-serif;
+  flex-wrap: wrap;
+}
+
+.mainNavBar a{
+  color: white;
+}
+
+.navButtonMain{
+  margin: 2vw;
+}
+
+.navDiv{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2rem;
+  min-width: 7rem;
+  margin: 0.25vw;
+  padding: 0.25vw 0;
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  background-color: #7851A9;
+  transition: transform 0.3s ease-in-out,background-color 0.5s ease;
+}
+
+/* HOVER EFFECTs */
+
+.mainNavBar a:hover{
+  color: black;
+}
+
+.navDiv:hover{
+  transform: scale(1.3);
+}
+
+.redDiv:hover{
+  background-color: red;
+}
+
+.oraDiv:hover{
+  background-color: orange;
+}
+
+.yelDiv:hover{
+  background-color: yellow;
+}
+
+.greDiv:hover{
+  background-color: #66ff00;
+}
+
+.bluDiv:hover{
+  background-color: blue;
+}
+
+.indDiv:hover{
+  background-color: #BC13FE;
+}
+
+.vioDiv:hover{
+  background-color: violet;
+}
