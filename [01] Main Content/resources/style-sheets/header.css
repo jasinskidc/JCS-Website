@@ -1,0 +1,31 @@
+/* HEADER */
+@font-face {
+  font-family: 'Harrington';
+  src: url('../fonts/Harrington/harrington.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+header{
+  background-color: #7851A9;
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  font-family: 'Harrington', sans-serif;
+  font-size: larger;
+  color: white;
+  width: 100%;
+}
+
+header div{
+  margin: 1vw;
+}
+
+#headerDiamond {
+  background-color: #7851A9;
+  max-width: 6rem;
+  min-width: 3rem;
+}
+
+.titleText{
+  text-shadow: 2px 2px 4px black;
+}

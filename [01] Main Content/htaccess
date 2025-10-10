@@ -1,0 +1,12 @@
+# BEGIN WordPress
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+# RewriteRule ^(.*)$ $1.html [NC,L] -- This removes .html but also breaks the site. try again when learned more!!
+RewriteRule . /index.php [L]
+    DirectoryIndex LandingPage.html
+</IfModule>
+# END WordPres
