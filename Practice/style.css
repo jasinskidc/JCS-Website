@@ -67,8 +67,6 @@ nav {
     flex-direction: column;
     align-items: center;
     background-color: indigo;
-    /* border-bottom: 5px solid silver; */
-    border-radius: 0 0 20px 20px;
     position: sticky;
     top: 0;
 }
