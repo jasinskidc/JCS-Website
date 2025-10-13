@@ -4,16 +4,34 @@
 }
 
 body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     background-color: skyblue;
 }
 
 /* HEADER CONTENT START */
+
+@font-face {
+    font-family: 'Harrington';
+    src: url('fonts/Harrington/harrington.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lexend';
+    src: url('../fonts/Lexend_Giga/LexendGiga-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 
 header {
     background-color: indigo;
     color: silver;
     display: flex;
     flex: row;
+    font-family: 'Harrington', sans-serif;
 }
 
 .headerDiv {
@@ -62,18 +80,186 @@ header {
 
 /* NAVBAR CONTENT START */
 
-nav {
+.mainNavBar {
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: indigo;
     position: sticky;
     top: 0;
+    z-index: 1000;
+    font-family: 'Lexend', sans-serif;
 }
 
-nav section {
+.navPageButtons {
     display: flex;
     flex-direction: row;
+    margin: 2vw;
+}
+
+.navBtnDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2rem;
+    min-width: 7rem;
+    background-color: green;
+    transition: transform 0.3s ease-in-out,background-color 0.5s ease;
+}
+
+.navBtnDiv button {
+    border: none;
+    /* background-color: blue; */
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
 }
 
 /* NAVBAR CONTENT END */
+
+/* PAGE CONTENT START */
+
+main {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: 10% 80% 10%;
+    min-height: 75vh;
+    width: 100%;
+    grid-template-areas: 
+        "pageBanner     pageBanner      pageBanner"
+        "leftAside      mainContent     rightAside"
+        "lowerContent      lowerContent    lowerContent";
+    font-weight: 600;
+    font-size: 20px;
+}
+
+@media (max-width: 678px) {
+    main {
+        grid-template-rows: 5% 5% 80% 5% 5%;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "pageBanner"
+            "leftAside"
+            "mainContent"
+            "rightAside"
+            "lowerContent"
+    }
+}
+
+.mainSection {
+    overflow-wrap: break-word;
+    hyphens: auto;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#pageBanner {
+    grid-area: pageBanner;
+}
+
+#leftAside {
+    grid-area: leftAside;
+}
+
+#mainContent {
+    grid-area: mainContent;
+}
+
+#lowerContent {
+    grid-area: lowerContent;
+}
+
+#rightAside {
+    grid-area: rightAside;
+}
+
+/* PAGE CONTENT END */
+
+/* FOOTER CONTENT START */
+
+footer {
+    margin-top: auto;
+    background-color: indigo;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+    width: 100%;
+}
+
+footer section{
+  flex:1;
+}
+
+.footer-top{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.footer-top section{
+  width: 33%;
+  }
+  
+#footerDiamond {
+  max-width: 4rem;
+  min-width: 2rem;
+  background-color: indigo;
+  border-radius: 50px;
+  transition: transform 0.3s ease-in-out;
+ }
+  
+#footerDiamond:hover {
+  transform: scale(1.2);
+}
+
+.top-footer div{
+  display:flex;  
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+#socialMediaLinks{
+  display:flex;
+  flex-direction:row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  max-width: 100%;
+  
+}
+
+.SMiconLinks {
+  border-radius: 10px;
+  max-width:50%;
+  max-height:10vh;
+  transition: transform 0.3s ease-in-out;
+}
+
+.SMiconLinks:hover{
+  transform: scale(1.5);
+}
+
+#AdminSignIn{
+  width: 95%;
+}
+
+div form{
+  width: 100%;
+}
+
+.footer-bottom{
+  display: flex;
+  justify-content: center;
+  margin: 1vh;
+}
+
+.footer-bottom a{
+  margin: 0.5vw;
+}
+
+/* FOOTER CONTENT END */
