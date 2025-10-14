@@ -1,288 +1,145 @@
 // NAVIGATION VARIABLES START
 
-// NAV BUTTONS
-const btnRed = document.getElementById("calendarRed");
-const btnOra = document.getElementById("contactOrange");
-const btnYel = document.getElementById("aboutYellow");
-const btnGre = document.getElementById("priceGreen");
-const btnBlu = document.getElementById("galleryBlue");
-const btnInd = document.getElementById("downloadsIndigo");
-const btnVio = document.getElementById("user-portalViolet");
+      // IDK
+      // let navTabColor = x;
+      // let navTabExpandedBG = x;
 
-// NAV TABS
-const divRed = document.getElementById("calendarSPDiv");
-const divOra = document.getElementById("contactSPDiv");
-const divYel = document.getElementById("aboutSPDiv");
-const divGre = document.getElementById("priceSPDiv");
-const divBlu = document.getElementById("gallerySPDiv");
-const divInd = document.getElementById("downloadsSPDiv");
-const divVio = document.getElementById("user-portalSPDiv");
+      // NAV BUTTONS
+      const btnRed = document.getElementById("calendarRed");
+      const btnOra = document.getElementById("contactOrange");
+      const btnYel = document.getElementById("aboutYellow");
+      const btnGre = document.getElementById("priceGreen");
+      const btnBlu = document.getElementById("galleryBlue");
+      const btnInd = document.getElementById("downloadsIndigo");
+      const btnVio = document.getElementById("user-portalViolet");
 
-// NAV BUTTON CONTAINER
-const redDiv = document.getElementById("redDiv");
-const oraDiv = document.getElementById("oraDiv");
-const yelDiv = document.getElementById("yelDiv");
-const greDiv = document.getElementById("greDiv");
-const bluDiv = document.getElementById("bluDiv");
-const indDiv = document.getElementById("indDiv");
-const vioDiv = document.getElementById("vioDiv");
+      // NAV TABS
+      const divRed = document.getElementById("calendarSPDiv");
+      const divOra = document.getElementById("contactSPDiv");
+      const divYel = document.getElementById("aboutSPDiv");
+      const divGre = document.getElementById("priceSPDiv");
+      const divBlu = document.getElementById("gallerySPDiv");
+      const divInd = document.getElementById("downloadsSPDiv");
+      const divVio = document.getElementById("user-portalSPDiv");
 
-// NAV TABS CONTAINER
-const navTabs = document.getElementById("mainNavBar");
+      // NAV BUTTON CONTAINER
+      const redDiv = document.getElementById("redDiv");
+      const oraDiv = document.getElementById("oraDiv");
+      const yelDiv = document.getElementById("yelDiv");
+      const greDiv = document.getElementById("greDiv");
+      const bluDiv = document.getElementById("bluDiv");
+      const indDiv = document.getElementById("indDiv");
+      const vioDiv = document.getElementById("vioDiv");
 
-// NAVIGATION VARIABLES END
+      // NAV TABS CONTAINER
+      const navTabs = document.getElementById("mainNavBar");
+
+
+// NAVIGATION FUNCTIONS START
+
+      function navClear() {
+            redDiv.style.backgroundColor = 'transparent';
+            oraDiv.style.backgroundColor = 'transparent';
+            yelDiv.style.backgroundColor = 'transparent';
+            greDiv.style.backgroundColor = 'transparent';
+            bluDiv.style.backgroundColor = 'transparent';
+            indDiv.style.backgroundColor = 'transparent';
+            vioDiv.style.backgroundColor = 'transparent';
+            divRed.classList.add("hiddenElement");
+            divOra.classList.add("hiddenElement");
+            divYel.classList.add("hiddenElement");
+            divGre.classList.add("hiddenElement");
+            divBlu.classList.add("hiddenElement");
+            divInd.classList.add("hiddenElement");
+            divVio.classList.add("hiddenElement");
+            btnYel.style.color = 'white';
+            btnGre.style.color = 'white';
+      }
 
 // NAVIGATION CODE START
 
 btnRed.addEventListener("click", function () {
-  if (divRed.classList.contains("hiddenNavPageTab")) {
-        divRed.classList.remove("hiddenNavPageTab");
-        divOra.classList.add("hiddenNavPageTab");
-        divYel.classList.add("hiddenNavPageTab");
-        divGre.classList.add("hiddenNavPageTab");
-        divBlu.classList.add("hiddenNavPageTab");
-        divInd.classList.add("hiddenNavPageTab");
-        divVio.classList.add("hiddenNavPageTab");
-        redDiv.style.backgroundColor = 'red';
-        oraDiv.style.backgroundColor = 'transparent';
-        yelDiv.style.backgroundColor = 'transparent';
-        greDiv.style.backgroundColor = 'transparent';
-        bluDiv.style.backgroundColor = 'transparent';
-        indDiv.style.backgroundColor = 'transparent';
-        vioDiv.style.backgroundColor = 'transparent';
-        btnYel.style.color = 'white';
-        btnGre.style.color = 'white';
+  if (divRed.classList.contains("hiddenElement")) {
+      navClear()
+      divRed.classList.remove("hiddenElement");
+      redDiv.style.backgroundColor = 'red';
 } else {
-        divRed.classList.add("hiddenNavPageTab");
-        btnYel.style.color = 'white';
-        btnGre.style.color = 'white';
-        redDiv.style.backgroundColor = 'transparent';
-        oraDiv.style.backgroundColor = 'transparent';
-        yelDiv.style.backgroundColor = 'transparent';
-        greDiv.style.backgroundColor = 'transparent';
-        bluDiv.style.backgroundColor = 'transparent';
-        indDiv.style.backgroundColor = 'transparent';
-        vioDiv.style.backgroundColor = 'transparent';
+      navClear()
   }
 });   
 
 // Shows Contact Nav Page Tabs
 btnOra.addEventListener("click", function () {
-  if (divOra.classList.contains("hiddenNavPageTab")) {
-        divOra.classList.remove("hiddenNavPageTab");
-        divRed.classList.add("hiddenNavPageTab");
-        divYel.classList.add("hiddenNavPageTab");
-        divGre.classList.add("hiddenNavPageTab");
-        divBlu.classList.add("hiddenNavPageTab");
-        divInd.classList.add("hiddenNavPageTab");
-        divVio.classList.add("hiddenNavPageTab");
-        oraDiv.style.backgroundColor = 'orange';
-        redDiv.style.backgroundColor = 'transparent';
-        yelDiv.style.backgroundColor = 'transparent';
-        greDiv.style.backgroundColor = 'transparent';
-        bluDiv.style.backgroundColor = 'transparent';
-        indDiv.style.backgroundColor = 'transparent';
-        vioDiv.style.backgroundColor = 'transparent';
-        btnYel.style.color = 'white';
-        btnGre.style.color = 'white';
+  if (divOra.classList.contains("hiddenElement")) {
+      navClear()
+      divOra.classList.remove("hiddenElement");
+      oraDiv.style.backgroundColor = 'orange';
   } else {
-        divOra.classList.add("hiddenNavPageTab");
-        btnYel.style.color = 'white';
-        btnGre.style.color = 'white';
-        redDiv.style.backgroundColor = 'transparent';
-        oraDiv.style.backgroundColor = 'transparent';
-        yelDiv.style.backgroundColor = 'transparent';
-        greDiv.style.backgroundColor = 'transparent';
-        bluDiv.style.backgroundColor = 'transparent';
-        indDiv.style.backgroundColor = 'transparent';
-        vioDiv.style.backgroundColor = 'transparent';
+      navClear()
   }
 });    
 
 // Shows About Nav Page Tabs
 btnYel.addEventListener("click", function () {
-  if (divYel.classList.contains("hiddenNavPageTab")) {
-        divYel.classList.remove("hiddenNavPageTab");
-        divRed.classList.add("hiddenNavPageTab");
-        divOra.classList.add("hiddenNavPageTab");
-        divGre.classList.add("hiddenNavPageTab");
-        divBlu.classList.add("hiddenNavPageTab");
-        divInd.classList.add("hiddenNavPageTab");
-        divVio.classList.add("hiddenNavPageTab");
-        yelDiv.style.backgroundColor = 'yellow';
-        btnYel.style.color = 'black';
-        redDiv.style.backgroundColor = 'transparent';
-        oraDiv.style.backgroundColor = 'transparent';
-        greDiv.style.backgroundColor = 'transparent';
-        bluDiv.style.backgroundColor = 'transparent';
-        indDiv.style.backgroundColor = 'transparent';
-        vioDiv.style.backgroundColor = 'transparent';
-        btnGre.style.color = 'white';
+  if (divYel.classList.contains("hiddenElement")) {
+      navClear()
+      divYel.classList.remove("hiddenElement");
+      yelDiv.style.backgroundColor = 'yellow';
+      btnYel.style.color = 'black';
   } else {
-        divYel.classList.add("hiddenNavPageTab");
-        btnYel.style.color = 'white';
-        btnGre.style.color = 'white';
-        redDiv.style.backgroundColor = 'transparent';
-        oraDiv.style.backgroundColor = 'transparent';
-        yelDiv.style.backgroundColor = 'transparent';
-        greDiv.style.backgroundColor = 'transparent';
-        bluDiv.style.backgroundColor = 'transparent';
-        indDiv.style.backgroundColor = 'transparent';
-        vioDiv.style.backgroundColor = 'transparent';
+      navClear()
   }
 });  
 
 // Shows Prices Nav Page Tabs
 btnGre.addEventListener("click", function () {
-  if (divGre.classList.contains("hiddenNavPageTab")) {
-        divGre.classList.remove("hiddenNavPageTab");
-        divRed.classList.add("hiddenNavPageTab");
-        divOra.classList.add("hiddenNavPageTab");
-        divYel.classList.add("hiddenNavPageTab");
-        divBlu.classList.add("hiddenNavPageTab");
-        divInd.classList.add("hiddenNavPageTab");
-        divVio.classList.add("hiddenNavPageTab");
-        greDiv.style.backgroundColor = '#66ff00';
-        redDiv.style.backgroundColor = 'transparent';
-        oraDiv.style.backgroundColor = 'transparent';
-        yelDiv.style.backgroundColor = 'transparent';
-        bluDiv.style.backgroundColor = 'transparent';
-        indDiv.style.backgroundColor = 'transparent';
-        vioDiv.style.backgroundColor = 'transparent';
-        btnYel.style.color = 'white';
-        btnGre.style.color = 'black';
+  if (divGre.classList.contains("hiddenElement")) {
+      navClear()
+      divGre.classList.remove("hiddenElement");
+      greDiv.style.backgroundColor = '#66ff00';
+      btnGre.style.color = 'black';
   } else {
-        divGre.classList.add("hiddenNavPageTab");
-        btnYel.style.color = 'white';
-        btnGre.style.color = 'white';
-        redDiv.style.backgroundColor = 'transparent';
-        oraDiv.style.backgroundColor = 'transparent';
-        yelDiv.style.backgroundColor = 'transparent';
-        greDiv.style.backgroundColor = 'transparent';
-        bluDiv.style.backgroundColor = 'transparent';
-        indDiv.style.backgroundColor = 'transparent';
-        vioDiv.style.backgroundColor = 'transparent';
+      navClear()
   }
 });   
 
 // Shows Gallery Nav Page Tabs
 btnBlu.addEventListener("click", function () {
-  if (divBlu.classList.contains("hiddenNavPageTab")) {
-        divBlu.classList.remove("hiddenNavPageTab");
-        divRed.classList.add("hiddenNavPageTab");
-        divOra.classList.add("hiddenNavPageTab");
-        divYel.classList.add("hiddenNavPageTab");
-        divGre.classList.add("hiddenNavPageTab");
-        divInd.classList.add("hiddenNavPageTab");
-        divVio.classList.add("hiddenNavPageTab");
-        bluDiv.style.backgroundColor = 'blue';
-        redDiv.style.backgroundColor = 'transparent';
-        oraDiv.style.backgroundColor = 'transparent';
-        yelDiv.style.backgroundColor = 'transparent';
-        greDiv.style.backgroundColor = 'transparent';
-        indDiv.style.backgroundColor = 'transparent';
-        vioDiv.style.backgroundColor = 'transparent';
-        btnYel.style.color = 'white';
-        btnGre.style.color = 'white';
+  if (divBlu.classList.contains("hiddenElement")) {
+      navClear()
+      divBlu.classList.remove("hiddenElement");
+      bluDiv.style.backgroundColor = 'blue';
   } else {
-        divBlu.classList.add("hiddenNavPageTab");
-        btnYel.style.color = 'white';
-        btnGre.style.color = 'white';
-        redDiv.style.backgroundColor = 'transparent';
-        oraDiv.style.backgroundColor = 'transparent';
-        yelDiv.style.backgroundColor = 'transparent';
-        greDiv.style.backgroundColor = 'transparent';
-        bluDiv.style.backgroundColor = 'transparent';
-        indDiv.style.backgroundColor = 'transparent';
-        vioDiv.style.backgroundColor = 'transparent';
+      navClear()
   }
 });  
 
 // Shows Downloads Nav Page Tabs
 btnInd.addEventListener("click", function () {
-  if (divInd.classList.contains("hiddenNavPageTab")) {
-        divInd.classList.remove("hiddenNavPageTab");
-        divRed.classList.add("hiddenNavPageTab");
-        divOra.classList.add("hiddenNavPageTab");
-        divYel.classList.add("hiddenNavPageTab");
-        divGre.classList.add("hiddenNavPageTab");
-        divBlu.classList.add("hiddenNavPageTab");
-        divVio.classList.add("hiddenNavPageTab");
-        indDiv.style.backgroundColor = '#BC13FE';
-        redDiv.style.backgroundColor = 'transparent';
-        oraDiv.style.backgroundColor = 'transparent';
-        yelDiv.style.backgroundColor = 'transparent';
-        greDiv.style.backgroundColor = 'transparent';
-        bluDiv.style.backgroundColor = 'transparent';
-        vioDiv.style.backgroundColor = 'transparent';
-        btnYel.style.color = 'white';
-        btnGre.style.color = 'white';
+  if (divInd.classList.contains("hiddenElement")) {
+      navClear()
+      divInd.classList.remove("hiddenElement");
+      indDiv.style.backgroundColor = '#BC13FE';
   } else {
-        divInd.classList.add("hiddenNavPageTab");
-        btnYel.style.color = 'white';
-        btnGre.style.color = 'white';
-        redDiv.style.backgroundColor = 'transparent';
-        oraDiv.style.backgroundColor = 'transparent';
-        yelDiv.style.backgroundColor = 'transparent';
-        greDiv.style.backgroundColor = 'transparent';
-        bluDiv.style.backgroundColor = 'transparent';
-        indDiv.style.backgroundColor = 'transparent';
-        vioDiv.style.backgroundColor = 'transparent';
+      navClear()
   }
 });  
 
 // Shows User-Portal Nav Page Tabs
 btnVio.addEventListener("click", function () {
-  if (divVio.classList.contains("hiddenNavPageTab")) {
-        divVio.classList.remove("hiddenNavPageTab");
-        divRed.classList.add("hiddenNavPageTab");
-        divOra.classList.add("hiddenNavPageTab");
-        divYel.classList.add("hiddenNavPageTab");
-        divGre.classList.add("hiddenNavPageTab");
-        divBlu.classList.add("hiddenNavPageTab");
-        divInd.classList.add("hiddenNavPageTab");
-        vioDiv.style.backgroundColor = 'violet';
-        redDiv.style.backgroundColor = 'transparent';
-        oraDiv.style.backgroundColor = 'transparent';
-        yelDiv.style.backgroundColor = 'transparent';
-        greDiv.style.backgroundColor = 'transparent';
-        bluDiv.style.backgroundColor = 'transparent';
-        indDiv.style.backgroundColor = 'transparent';
-        btnYel.style.color = 'white';
-        btnGre.style.color = 'white';
+  if (divVio.classList.contains("hiddenElement")) {
+      navClear()
+      divVio.classList.remove("hiddenElement");
+      vioDiv.style.backgroundColor = 'violet';
   } else {
-        divVio.classList.add("hiddenNavPageTab");
-        btnYel.style.color = 'white';
-        btnGre.style.color = 'white';
-        redDiv.style.backgroundColor = 'transparent';
-        oraDiv.style.backgroundColor = 'transparent';
-        yelDiv.style.backgroundColor = 'transparent';
-        greDiv.style.backgroundColor = 'transparent';
-        bluDiv.style.backgroundColor = 'transparent';
-        indDiv.style.backgroundColor = 'transparent';
-        vioDiv.style.backgroundColor = 'transparent';
+      navClear()
   }
 });  
 
 // Clear Nav Tabs if focus/mouse leaves it
 
 navTabs.addEventListener('mouseleave', () => {
-        divRed.classList.add("hiddenNavPageTab");
-        divOra.classList.add("hiddenNavPageTab");
-        divYel.classList.add("hiddenNavPageTab");
-        divGre.classList.add("hiddenNavPageTab");
-        divBlu.classList.add("hiddenNavPageTab");
-        divInd.classList.add("hiddenNavPageTab");
-        divVio.classList.add("hiddenNavPageTab");
-        redDiv.style.backgroundColor = 'transparent';
-        oraDiv.style.backgroundColor = 'transparent';
-        yelDiv.style.backgroundColor = 'transparent';
-        greDiv.style.backgroundColor = 'transparent';
-        bluDiv.style.backgroundColor = 'transparent';
-        indDiv.style.backgroundColor = 'transparent';
-        vioDiv.style.backgroundColor = 'transparent';
-        btnYel.style.color = 'white';
-        btnGre.style.color = 'white';
+      navClear()
 });   
 
 

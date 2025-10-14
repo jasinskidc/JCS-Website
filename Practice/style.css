@@ -115,6 +115,7 @@ header {
     align-items: center;
     background-color: indigo;
     position: sticky;
+    color: white;
 }
 
 #navPageButtons {
@@ -128,7 +129,7 @@ header {
   display: flex;
 }
 
-.hiddenNavPageTab {
+.hiddenElement {
   display: none;
 }
 
@@ -156,7 +157,10 @@ header {
     border: none;
     border-radius: 20px;
     margin: 0.5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1.5rem;
     padding: 0.5rem;
+    cursor: pointer;
 }
 
 
