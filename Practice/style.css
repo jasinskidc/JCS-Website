@@ -151,14 +151,17 @@ header {
 }
 
 .navSPBtn {
-    background-color: transparent;
+    background-color: plum;
     color: white;
     border: none;
+    border-radius: 20px;
+    margin: 0.5rem;
+    padding: 0.5rem;
 }
 
 
-.mainNavBar button:hover{
-  color: black;
+#navPageButtons button:hover{
+  color: black !important;
 }
 
 .navDiv:hover{

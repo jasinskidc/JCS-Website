@@ -55,6 +55,7 @@ btnRed.addEventListener("click", function () {
 } else {
         divRed.classList.add("hiddenNavPageTab");
         btnYel.style.color = 'white';
+        btnGre.style.color = 'white';
         redDiv.style.backgroundColor = 'transparent';
         oraDiv.style.backgroundColor = 'transparent';
         yelDiv.style.backgroundColor = 'transparent';
@@ -87,6 +88,7 @@ btnOra.addEventListener("click", function () {
   } else {
         divOra.classList.add("hiddenNavPageTab");
         btnYel.style.color = 'white';
+        btnGre.style.color = 'white';
         redDiv.style.backgroundColor = 'transparent';
         oraDiv.style.backgroundColor = 'transparent';
         yelDiv.style.backgroundColor = 'transparent';
@@ -119,6 +121,7 @@ btnYel.addEventListener("click", function () {
   } else {
         divYel.classList.add("hiddenNavPageTab");
         btnYel.style.color = 'white';
+        btnGre.style.color = 'white';
         redDiv.style.backgroundColor = 'transparent';
         oraDiv.style.backgroundColor = 'transparent';
         yelDiv.style.backgroundColor = 'transparent';
@@ -151,6 +154,7 @@ btnGre.addEventListener("click", function () {
   } else {
         divGre.classList.add("hiddenNavPageTab");
         btnYel.style.color = 'white';
+        btnGre.style.color = 'white';
         redDiv.style.backgroundColor = 'transparent';
         oraDiv.style.backgroundColor = 'transparent';
         yelDiv.style.backgroundColor = 'transparent';
@@ -183,6 +187,7 @@ btnBlu.addEventListener("click", function () {
   } else {
         divBlu.classList.add("hiddenNavPageTab");
         btnYel.style.color = 'white';
+        btnGre.style.color = 'white';
         redDiv.style.backgroundColor = 'transparent';
         oraDiv.style.backgroundColor = 'transparent';
         yelDiv.style.backgroundColor = 'transparent';
@@ -215,6 +220,7 @@ btnInd.addEventListener("click", function () {
   } else {
         divInd.classList.add("hiddenNavPageTab");
         btnYel.style.color = 'white';
+        btnGre.style.color = 'white';
         redDiv.style.backgroundColor = 'transparent';
         oraDiv.style.backgroundColor = 'transparent';
         yelDiv.style.backgroundColor = 'transparent';
@@ -247,6 +253,7 @@ btnVio.addEventListener("click", function () {
   } else {
         divVio.classList.add("hiddenNavPageTab");
         btnYel.style.color = 'white';
+        btnGre.style.color = 'white';
         redDiv.style.backgroundColor = 'transparent';
         oraDiv.style.backgroundColor = 'transparent';
         yelDiv.style.backgroundColor = 'transparent';
