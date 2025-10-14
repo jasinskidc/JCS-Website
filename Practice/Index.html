@@ -84,107 +84,151 @@
             </div>
         </section>
     </header>
-    <nav class="mainNavBar">
-        <section class="navPageButtons">
-            <div id="calendarNavDiv" class="navBtnDiv">
-                <button>
-                    <img src="">
+    <nav id="mainNavBar">
+        <section id="navPageButtons">
+            <div id="redDiv" class="navDiv">
+                <button class="navButtonMain" id="calendarRed">
                     <h3>Calendar</h3>
-                    <img src="">
-                </button>    
+                </button>
             </div>
-            <div id="contactNavDiv" class="navBtnDiv">
-                <button>
-                    <img src="">
+            <div id="oraDiv" class="navDiv">
+                <button class="navButtonMain" id="contactOrange">
                     <h3>Contact</h3>
-                    <img src="">
-                </button>    
+                </button>
             </div>
-            <div id="aboutNavDiv" class="navBtnDiv">
-                <button>
-                    <img src="">
+            <div id="yelDiv" class="navDiv">
+                <button class="navButtonMain" id="aboutYellow">
                     <h3>About</h3>
-                    <img src="">
-                </button>    
+                </button>
             </div>
-            <div id="priceNavDiv" class="navBtnDiv">
-                <button>
-                    <img src="">
-                    <h3>Prices</h3>
-                    <img src="">
-                </button>    
+            <div id="greDiv" class="navDiv">
+                <button class="navButtonMain" id="priceGreen">
+                    <h3>Pricing</h3>
+                </button>
             </div>
-            <div id="galleryNavDiv" class="navBtnDiv">
-                <button>
-                    <img src="">
+            <div id="bluDiv" class="navDiv">
+                <button class="navButtonMain" id="galleryBlue">
                     <h3>Gallery</h3>
-                    <img src="">
-                </button>    
+                </button>
             </div>
-            <div id="downloadNavDiv" class="navBtnDiv">
-                <button>
-                    <img src="">
-                    <h3>Download</h3>
-                    <img src="">
-                </button>    
+            <div id="indDiv" class="navDiv">
+                <button class="navButtonMain" id="downloadsIndigo">
+                    <h3>Downloads</h3>
+                </button>
             </div>
-            <div id="userportalNavDiv" class="navBtnDiv">
-                <button>
-                    <img src="">
+            <div id="vioDiv" class="navDiv">
+                <button class="navButtonMain" id="user-portalViolet">
                     <h3>User Portal</h3>
-                    <img src="">
                 </button>
             </div>
         </section>
-        <section class="navSubPageTab">
-            <div hidden id="calendarSPDiv">
-                <button class="navSPBtn" id="calendarEventsBtn">
+        <section id="navSPTabs">
+            <div id="calendarSPDiv" class="navSubPageTab hiddenNavPageTab">
+                <section class="navSPBtn" id="calendarEventsBtn">
+                    <button>
+                        <img src="img/NoPicture.webp">
+                        <h3>Events</h3>
+                    </button>
+                </section>
+                <section class="navSPBtn" id="calendarEventsBtn">
+                    <button>
+                        <img src="img/NoPicture.webp">
+                        <h3>Meet-Ups</h3>
+                    </button>
+                </section>
+                <section class="navSPBtn" id="calendarEventsBtn">
+                    <button>
+                        <img src="img/NoPicture.webp">
+                        <h3>Seniors</h3>
+                    </button>
+                </section>
+            </div>
+            <div id="contactSPDiv" class="navSubPageTab hiddenNavPageTab">
+                <button class="navSPBtn" id="contactFAQBtn">
+                    <img src="img/NoPicture.webp">
+                    <h3>F.A.Q.</h3>
+                </button>
+                <button class="navSPBtn" id="contactJCSBtn">
+                    <img src="img/NoPicture.webp">
+                    <h3>JCS</h3>
+                </button>
+                <button class="navSPBtn" id="contactEmailBtn">
+                    <img src="img/NoPicture.webp">
+                    <h3>Email</h3>
+                </button>
+            </div>
+            <div id="aboutSPDiv" class="navSubPageTab hiddenNavPageTab">
+                <button class="navSPBtn" id="aboutJCSBtn">
+                    <img src="img/NoPicture.webp">
+                    <h3>JCS</h3>
+                </button>
+                <button class="navSPBtn" id="aboutHomeSchoolBtn">
+                    <img src="img/NoPicture.webp">
+                    <h3>HomeSchool</h3>
+                </button>
+                <button class="navSPBtn" id="aboutLegalBtn">
+                    <img src="img/NoPicture.webp">
+                    <h3>Legal</h3>
+                </button>
+            </div>
+            <div id="priceSPDiv" class="navSubPageTab hiddenNavPageTab">
+                <button class="navSPBtn" id="priceAffiliatedBtn">
                     <img src="img/NoPicture.webp">
                     <h3>Events</h3>
                 </button>
-                <button class="navSPBtn" id="calendarEventsBtn">
+                <button class="navSPBtn" id="priceAlternativesBtn">
                     <img src="img/NoPicture.webp">
-                    <h3>Meet-Ups</h3>
+                    <h3>Events</h3>
                 </button>
-                <button class="navSPBtn" id="calendarEventsBtn">
+                <button class="navSPBtn" id="priceCurriculumBtn">
                     <img src="img/NoPicture.webp">
-                    <h3>Seniors</h3>
+                    <h3>Events</h3>
+                </button>
+                <button class="navSPBtn" id="priceMerchBtn">
+                    <img src="img/NoPicture.webp">
+                    <h3>Events</h3>
                 </button>
             </div>
-            <div hidden id="contactSPDiv">
-                <button class="navSPBtn" id="">
-                    <img src="">
-                    <h3></h3>
+            <div id="gallerySPDiv" class="navSubPageTab hiddenNavPageTab">
+                <button class="navSPBtn" id="GalleryGraduationBtn">
+                    <img src="img/NoPicture.webp">
+                    <h3>Graduations</h3>
+                </button>
+                <button class="navSPBtn" id="galleryPromsBtn">
+                    <img src="img/NoPicture.webp">
+                    <h3>Proms</h3>
+                </button>
+                <button class="navSPBtn" id="galleryYearbooksBtn">
+                    <img src="img/NoPicture.webp">
+                    <h3>Yearbooks</h3>
                 </button>
             </div>
-            <div hidden id="aboutSPDiv">
-                <button class="navSPBtn" id="">
-                    <img src="">
-                    <h3></h3>
+            <div id="downloadsSPDiv" class="navSubPageTab hiddenNavPageTab">
+                <button class="navSPBtn" id="downloadFormsBtn">
+                    <img src="img/NoPicture.webp">
+                    <h3>Forms</h3>
+                </button>
+                <button class="navSPBtn" id="downloadMediaBtn">
+                    <img src="img/NoPicture.webp">
+                    <h3>Media</h3>
+                </button>
+                <button class="navSPBtn" id="downloadPracTestsBtn">
+                    <img src="img/NoPicture.webp">
+                    <h3>Practice Tests</h3>
                 </button>
             </div>
-            <div hidden id="priceSPDiv">
-                <button class="navSPBtn" id="">
-                    <img src="">
-                    <h3></h3>
+            <div id="user-portalSPDiv" class="navSubPageTab hiddenNavPageTab">
+                <button class="navSPBtn" id="userportalApplicationsBtn">
+                    <img src="img/NoPicture.webp">
+                    <h3>Applications</h3>
                 </button>
-            </div>
-            <div hidden id="gallerySPDiv">
-                <button class="navSPBtn" id="">
-                    <img src="">
-                    <h3></h3>
+                <button class="navSPBtn" id="userportalDashboardBtn">
+                    <img src="img/NoPicture.webp">
+                    <h3>Dashboard</h3>
                 </button>
-            </div>
-            <div hidden id="downloadsSPDiv">
-                <button class="navSPBtn" id="">
-                    <img src="">
-                    <h3></h3>
-                </button>
-            </div>
-            <div hidden id="userportalSPDiv">
-                <button class="navSPBtn" id="">
-                    <img src="">
-                    <h3></h3>
+                <button class="navSPBtn" id="userportalSignInBtn">
+                    <img src="img/NoPicture.webp">
+                    <h3>User Sign-in</h3>
                 </button>
             </div>
         </section>
@@ -205,7 +249,6 @@
 
         </section>
         <aside id="leftAside" class="mainSection">
-            <h2>~LEFT ASIDE~</h2>
         </aside>
         <section id="mainContent" class="mainSection">
 
@@ -322,7 +365,6 @@
 
         </section>
         <aside id="rightAside" class="mainSection">
-            <h2>~RIGHT ASIDE~</h2>
         </aside>
     </main>
     <footer>
@@ -407,7 +449,9 @@
                 </a>
             </nav>
         </section>
-
     </footer>
+<!-- Javascript Links -->
+    <script src="script.js"></script>
+    
 </body>
 </html>
