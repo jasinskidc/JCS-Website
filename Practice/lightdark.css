@@ -1,0 +1,29 @@
+/* Light mode palette */
+body {
+    background-color: lightblue;
+    color: black;
+}
+
+header, footer {
+    background-color: #9955bb;
+}
+
+.headerTitleText {
+    color: white;
+}
+
+#mainNavBar {
+    background-color: #9955bb;
+}
+
+.navButtonMain {
+    color: white;
+}
+
+.navSPBtn {
+    color: white;
+}
+
+#footerDiamond {
+  background-color: #9955bb;
+ }

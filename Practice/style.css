@@ -1,14 +1,52 @@
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    background-color: skyblue;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+@font-face {
+    font-family: 'Harrington';
+    src: url('fonts/Harrington/harrington.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lexend';
+    src: url('../fonts/Lexend_Giga/LexendGiga-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@media (max-width: 678px) {
+    /* header {
+
+    }
+
+    nav {
+
+    } */
+
+    main {
+        grid-template-rows: 5% 5% 80% 5% 5%;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "pageBanner"
+            "leftAside"
+            "mainContent"
+            "rightAside"
+            "lowerContent"
+    }
+
+    /* footer {
+      
+    } */
 }
 
 
@@ -36,36 +74,29 @@ a:active {
 
 /* HEADER CONTENT START */
 
-@font-face {
-    font-family: 'Harrington';
-    src: url('fonts/Harrington/harrington.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Lexend';
-    src: url('../fonts/Lexend_Giga/LexendGiga-VariableFont_wght.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
 
 header {
-    background-color: indigo;
-    color: silver;
-    display: flex;
-    flex: row;
-    font-family: 'Harrington', sans-serif;
+  display: flex;
+  flex: row;
 }
 
 .headerDiv {
-    margin: 0.25rem;
-    padding: 0.5vh;
+  margin: 0.25rem;
+  padding: 0.5vh;
 }
 
 .left-header {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
+  width: 50%;
+}
+.titelHeaderDiv {
+  display: inline-block;
+}
+
+.headerTitleText {
+  font-family: 'Harrington', sans-serif;
+  font-size: 4em;
 }
 
 .right-header {
@@ -76,7 +107,7 @@ header {
 
 .headerBtn {
     width: 7vh;
-    background-color: indigo;
+    background-color: transparent;
     border: none;
     border-radius: 50%;
     transition: 0.3s;
@@ -114,7 +145,6 @@ header {
     flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
-    background-color: indigo;
     position: sticky;
     color: white;
 }
@@ -149,12 +179,10 @@ header {
     height: 2rem;
     min-width: 7rem;
     cursor: pointer;
-    color: white;
 }
 
 .navSPBtn {
-    background-color: plum;
-    color: white;
+    background-color: transparent;
     border: none;
     border-radius: 20px;
     margin: 0.5rem;
@@ -249,56 +277,37 @@ main {
         "lowerContent      lowerContent    lowerContent";
     font-weight: 600;
     font-size: 20px;
-}
-
-@media (max-width: 678px) {
-    main {
-        grid-template-rows: 5% 5% 80% 5% 5%;
-        grid-template-columns: 1fr;
-        grid-template-areas: 
-            "pageBanner"
-            "leftAside"
-            "mainContent"
-            "rightAside"
-            "lowerContent"
-    }
+    overflow: auto;
 }
 
 .mainSection {
     overflow-wrap: break-word;
     hyphens: auto;
-    background-color: transparent;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 98%;
-}
-
-
-aside {
-  border: 3px solid red;
-  border-radius: 20px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 
 #pageBanner {
-    grid-area: pageBanner;
+  grid-area: pageBanner;
 }
 
 #leftAside {
-    grid-area: leftAside;
+  grid-area: leftAside;
 }
 
 #mainContent {
-    grid-area: mainContent;
+  grid-area: mainContent;
 }
 
 #lowerContent {
-    grid-area: lowerContent;
+  grid-area: lowerContent;
 }
 
 #rightAside {
-    grid-area: rightAside;
+  grid-area: rightAside;
 }
 
 /* PAGE CONTENT END */
@@ -307,7 +316,6 @@ aside {
 
 footer {
     margin-top: auto;
-    background-color: indigo;
     display:flex;
     flex-direction: column;
     justify-content: space-between;
@@ -332,7 +340,6 @@ footer section{
 #footerDiamond {
   max-width: 4rem;
   min-width: 2rem;
-  background-color: indigo;
   border-radius: 50px;
   transition: transform 0.3s ease-in-out;
  }
